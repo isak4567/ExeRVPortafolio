@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ############# Variables ############# */
+$Color1: #09143C;
+$Color2: #FFFFFF;
+$Color3: #FA2F4C;
+$Color4: #E3DB1D;
+$Color5: #FFB27A;
+$Color6: #D9D9D9;
+$ColorFondo: linear-gradient(0deg, #09143cbb, #09143cbb);
+
+
+
+body {
+    height: 100vh;
+    width: 100vw;
+    color: $Color2;
+    background-image: $ColorFondo, url(../assets/img/backgroundImage.png);
+    background-size: auto 100% ;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    line-height: 34px;
+}
+
+/* ############# App ############# */
+.App {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+/* ############# Navegador ############# */
+.Navegador {
+    height: 100%;
+    width: 27%;
+    background-color: $Color1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Foto-Perfil {
+    width: 42%;
+    height: 18%;
+    margin-left: 30%;
+    border-radius: 50%;
+    margin-bottom: 24px;
+}
+
+.Foto-Perfil-img {
+    background-image: url('../assets/img/perfil.png');
+    background-size: 80% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.Cont-Nav {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 0;
+    margin-left: 16%;
+    .activo { background-color: $Color3;}
+}
+
+.Nav-Botones {
+    width: 100%;
+    padding: 16px 24px;
+    display: flex;
+    text-decoration: none;
+    button {
+        background-color: transparent;
+        color: $Color2;
+        font-size: 32px;
+        border: none;
+    }
+    img {
+        margin-right: 24px;
+    }
+}
+
+.Links {
+    margin-left: 24%;
+    font-size: 16px;
+    p {
+        margin-bottom: 8px;
+        svg {margin-right: 8px;}
+    }
+}
+
+/* ############# Contenido Principal - Home ############# */
+.Cont-Principal {
+    width: 74.74%;
+    display: flex;
+    justify-content: space-around;
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    h1 {
+        width: 380px;
+        font-size: 32px;
+        margin: 48px 0;
+    }
+    h2 {
+        font-size: 32px;
+        width: 380px;
+        text-decoration: dashed;
+    }
+}
+
+.img-sujeto {
+    height: 80vh;
+    margin-top: 10%;
+}
+
+.sujeto {
+    margin-top: 6%;
+}
+
+/* ############# Contenido Principal - SobreMi ############# */
+.SobreMi {
+    width: 100%;
+    display: flex;
+}
+
+.SobreMi-nav {
+    width: 14%;
+    padding-left: 24px;
+    padding-top: 160px;
+    div {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p {
+            font-size: 20px;
+            font-weight: 400;
+            color: $Color2;
+        }
+        svg {
+            font-size: 40px;
+            color: $Color2;
+        }
+        &:hover {
+            background-color: $Color3;
+            p {color: $Color1;}
+            svg {color: $Color1;}
+        }
+    }
+}
+
+.SobreMi-Seccion {
+    width: 86%;
+    height: 100%;
+}
+
+/* ============== SobreMi - Experiencia ============== */
+.Experiencia {
+    width: 100%;
+    height: 100%;
+    padding: 24px 24px 24px 5%;
+}
+
+.experiencias-nav {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    button {
+        display: flex;
+        align-items: center;
+        width: 15%;
+        padding: 20px 0;
+        background-color: transparent;
+        border: none;
+        color: $Color2;
+        font-size: 16px;
+        svg {
+            margin: 0 16px;
+            font-size: 24px;
+        }
+    }
+}
+
+.exp-navCont {
+    width: calc(70% - 20px);
+    margin: 0 10px;
+    display: flex;
+
+    .exp-nav {
+        width: 102px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        &:hover {
+            .exp-nav-img {
+                background-color:rgba(227, 219, 29, 0.20);
+                border: 2px solid $Color4;
+                border-bottom: none;
+                backdrop-filter: blur(7.5px);
+            }
+            @for $i from 1 through 8 {
+                .exp-nav-esp#{$i} {
+                  background-color:rgba(227, 219, 29, 0.20);
+
+                  border: calc(2px + (0.1px * calc($i * calc($i/3)) )) solid $Color4;
+                  border-top: none;
+                  border-bottom: none;
+                }
+            }
+
+        }
+    }
+
+    .exp-nav-img {
+        width: 86px;
+        height: 92px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px 8px 0 0;
+    }
+
+}
+
+@for $i from 1 through 8 {
+    .exp-nav-esp#{$i} {
+      height: 0.5px;
+      width: calc(86px + (0.5px * calc($i * calc($i/3)) ));
+    }
+}
+
+/* ############# Contenido Principal - Portafolio ############# */
+.lista-trabajos {
+    height: 100%;
+    width: 100%;
+    padding-left: 70px;
+    padding-bottom: 40px;
+    display: flex;
+}
+
+.trabajo {
+    transition: 0.3s all;
+    align-self: flex-end;
+    margin-right: 42px;
+    .trabajo-cont {
+        width: 207px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trabajo-cont-img {
+        width: 141px;
+        height: 146px;
+        border-radius: 50%;
+        background-color: $Color5;
+        margin: 0 0 -130px 0;
+        z-index: 1;
+    }
+
+    .trabajo-detalles {
+        background-color: $Color6;
+        width: 100%;
+        height: 217px;
+        border-radius: 16px;
+        div {
+            display: none;
+        }
+    }
+
+    .info-trabajo {
+        display: none;
+    }
+}
+
+.viendo-trabajo {
+    transition: 0.3s all;
+    align-self: flex-start;
+    .trabajo-cont {
+        width: 341px; 
+    }
+
+    .trabajo-cont-img {
+        width: 263px;
+        height: 273px;
+        margin: 24px 0;
+    }
+
+    .trabajo-detalles {
+        color: black;
+        padding: 35px 42px;
+        height: initial;
+        div {
+            display: block;
+            padding-bottom: 60px;
+        }
+    }
+
+    .info-trabajo {
+        display: block;
+        position: relative;
+        margin-top: -720px;
+        margin-left: 26vw;
+        max-width: 15vw;
+        z-index: 3;
+        h2{
+            margin-bottom: 28px;
+        }
+        p {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: normal;
+        }
+        button {
+            background-color: #E3DB1D;
+            padding: 8px 16px;
+            color: #000;
+            font-size: 32px;
+            border-radius: 8px;
+            margin-top: 8px;
+        }
+    }
+}
+
+.trabajo-left {
+    margin-left: -200px;
+}
+
+.portafolio-bt-D {
+    position: fixed;
+    height: 100%;
+    width: 8vw;
+    right: -10px;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(270deg, #09143C 15.16%, rgba(9, 20, 60, 0.10) 153.19%);
+    backdrop-filter: blur(5px);
+    z-index: 2;
+    button {
+        height: 100%;
+        background-color: transparent;
+        width: 80px;
+        border: 0;
+        display: flex;
+        svg {
+            align-self: flex-end;
+            margin: 24px auto;
+            color: $Color6;
+            font-size: 2em;
+
+        }
+        
+    }
+}
+
+/* ############# Contenido Principal - Referencias ############# */
+.referecias {
+    width: 100%;
+    height: 100%;
+    padding: 7% 10% 0 10%  
+}
+
+.referencias-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    div {
+        background-color: $Color6;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        opacity: 0.6;
+    }
+    .activo {
+        width: 200px;
+        height: 200px;
+        opacity: 1;
+    }
+}
+
+.referencias-desc {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 36px;
+}
+
+form {
+    display: flex;
+    .sujeto-referencia {
+        font-size: 20px;
+        font-weight: 600;
+        margin-right: 32px;
+    }
+
+    .formulario-espacios {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        .form-linkend {
+            height: 32px;
+            margin-bottom: 10px;
+        }
+        textarea {
+            height: 120px;
+            margin-bottom: 10px;
+        }
+        .form-submit {
+            background-color: #E3DB1D;
+            padding: 8px 16px;
+            color: #000;
+            font-size: 32px;
+            border-radius: 8px;
+            width: fit-content;
+            margin-left: 150px;
+        }
+    }
+}
+
+/* ############# Contenido Principal - Servicios ############# */
+.servicios {
+    width: 100%;
+    height: 100%;
+    padding: 46px 34px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicios-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    div {
+        height: 60vh;
+    }
+}

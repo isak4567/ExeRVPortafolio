@@ -1,0 +1,510 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ############# Variables ############# */
+body {
+  height: 100vh;
+  width: 100vw;
+  color: #FFFFFF;
+  background-image: linear-gradient(0deg, rgba(9, 20, 60, 0.7333333333), rgba(9, 20, 60, 0.7333333333)), url(../assets/img/backgroundImage.png);
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+/* ############# App ############# */
+.App {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+/* ############# Navegador ############# */
+.Navegador {
+  height: 100%;
+  width: 27%;
+  background-color: #09143C;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Foto-Perfil {
+  width: 42%;
+  height: 18%;
+  margin-left: 30%;
+  border-radius: 50%;
+  margin-bottom: 24px;
+}
+
+.Foto-Perfil-img {
+  background-image: url("../assets/img/perfil.png");
+  background-size: 80% auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.Cont-Nav {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 16px 0;
+  margin-left: 16%;
+}
+.Cont-Nav .activo {
+  background-color: #FA2F4C;
+}
+
+.Nav-Botones {
+  width: 100%;
+  padding: 16px 24px;
+  display: flex;
+  text-decoration: none;
+}
+.Nav-Botones button {
+  background-color: transparent;
+  color: #FFFFFF;
+  font-size: 32px;
+  border: none;
+}
+.Nav-Botones img {
+  margin-right: 24px;
+}
+
+.Links {
+  margin-left: 24%;
+  font-size: 16px;
+}
+.Links p {
+  margin-bottom: 8px;
+}
+.Links p svg {
+  margin-right: 8px;
+}
+
+/* ############# Contenido Principal - Home ############# */
+.Cont-Principal {
+  width: 74.74%;
+  display: flex;
+  justify-content: space-around;
+  overflow: scroll;
+}
+.Cont-Principal::-webkit-scrollbar {
+  display: none;
+}
+.Cont-Principal h1 {
+  width: 380px;
+  font-size: 32px;
+  margin: 48px 0;
+}
+.Cont-Principal h2 {
+  font-size: 32px;
+  width: 380px;
+  -webkit-text-decoration: dashed;
+          text-decoration: dashed;
+}
+
+.img-sujeto {
+  height: 80vh;
+  margin-top: 10%;
+}
+
+.sujeto {
+  margin-top: 6%;
+}
+
+/* ############# Contenido Principal - SobreMi ############# */
+.SobreMi {
+  width: 100%;
+  display: flex;
+}
+
+.SobreMi-nav {
+  width: 14%;
+  padding-left: 24px;
+  padding-top: 160px;
+}
+.SobreMi-nav div {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.SobreMi-nav div p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+.SobreMi-nav div svg {
+  font-size: 40px;
+  color: #FFFFFF;
+}
+.SobreMi-nav div:hover {
+  background-color: #FA2F4C;
+}
+.SobreMi-nav div:hover p {
+  color: #09143C;
+}
+.SobreMi-nav div:hover svg {
+  color: #09143C;
+}
+
+.SobreMi-Seccion {
+  width: 86%;
+  height: 100%;
+}
+
+/* ============== SobreMi - Experiencia ============== */
+.Experiencia {
+  width: 100%;
+  height: 100%;
+  padding: 24px 24px 24px 5%;
+}
+
+.experiencias-nav {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+}
+.experiencias-nav button {
+  display: flex;
+  align-items: center;
+  width: 15%;
+  padding: 20px 0;
+  background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+.experiencias-nav button svg {
+  margin: 0 16px;
+  font-size: 24px;
+}
+
+.exp-navCont {
+  width: calc(70% - 20px);
+  margin: 0 10px;
+  display: flex;
+}
+.exp-navCont .exp-nav {
+  width: 102px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.exp-navCont .exp-nav:hover .exp-nav-img {
+  background-color: rgba(227, 219, 29, 0.2);
+  border: 2px solid #E3DB1D;
+  border-bottom: none;
+  -webkit-backdrop-filter: blur(7.5px);
+          backdrop-filter: blur(7.5px);
+}
+.exp-navCont .exp-nav:hover .exp-nav-esp1 {
+  background-color: rgba(227, 219, 29, 0.2);
+  border: 2.0333333333px solid #E3DB1D;
+  border-top: none;
+  border-bottom: none;
+}
+.exp-navCont .exp-nav:hover .exp-nav-esp2 {
+  background-color: rgba(227, 219, 29, 0.2);
+  border: 2.1333333333px solid #E3DB1D;
+  border-top: none;
+  border-bottom: none;
+}
+.exp-navCont .exp-nav:hover .exp-nav-esp3 {
+  background-color: rgba(227, 219, 29, 0.2);
+  border: 2.3px solid #E3DB1D;
+  border-top: none;
+  border-bottom: none;
+}
+.exp-navCont .exp-nav:hover .exp-nav-esp4 {
+  background-color: rgba(227, 219, 29, 0.2);
+  border: 2.5333333333px solid #E3DB1D;
+  border-top: none;
+  border-bottom: none;
+}
+.exp-navCont .exp-nav:hover .exp-nav-esp5 {
+  background-color: rgba(227, 219, 29, 0.2);
+  border: 2.8333333333px solid #E3DB1D;
+  border-top: none;
+  border-bottom: none;
+}
+.exp-navCont .exp-nav:hover .exp-nav-esp6 {
+  background-color: rgba(227, 219, 29, 0.2);
+  border: 3.2px solid #E3DB1D;
+  border-top: none;
+  border-bottom: none;
+}
+.exp-navCont .exp-nav:hover .exp-nav-esp7 {
+  background-color: rgba(227, 219, 29, 0.2);
+  border: 3.6333333333px solid #E3DB1D;
+  border-top: none;
+  border-bottom: none;
+}
+.exp-navCont .exp-nav:hover .exp-nav-esp8 {
+  background-color: rgba(227, 219, 29, 0.2);
+  border: 4.1333333333px solid #E3DB1D;
+  border-top: none;
+  border-bottom: none;
+}
+.exp-navCont .exp-nav-img {
+  width: 86px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px 8px 0 0;
+}
+
+.exp-nav-esp1 {
+  height: 0.5px;
+  width: 86.1666666667px;
+}
+
+.exp-nav-esp2 {
+  height: 0.5px;
+  width: 86.6666666667px;
+}
+
+.exp-nav-esp3 {
+  height: 0.5px;
+  width: 87.5px;
+}
+
+.exp-nav-esp4 {
+  height: 0.5px;
+  width: 88.6666666667px;
+}
+
+.exp-nav-esp5 {
+  height: 0.5px;
+  width: 90.1666666667px;
+}
+
+.exp-nav-esp6 {
+  height: 0.5px;
+  width: 92px;
+}
+
+.exp-nav-esp7 {
+  height: 0.5px;
+  width: 94.1666666667px;
+}
+
+.exp-nav-esp8 {
+  height: 0.5px;
+  width: 96.6666666667px;
+}
+
+/* ############# Contenido Principal - Portafolio ############# */
+.lista-trabajos {
+  height: 100%;
+  width: 100%;
+  padding-left: 70px;
+  padding-bottom: 40px;
+  display: flex;
+}
+
+.trabajo {
+  transition: 0.3s all;
+  align-self: flex-end;
+  margin-right: 42px;
+}
+.trabajo .trabajo-cont {
+  width: 207px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.trabajo .trabajo-cont-img {
+  width: 141px;
+  height: 146px;
+  border-radius: 50%;
+  background-color: #FFB27A;
+  margin: 0 0 -130px 0;
+  z-index: 1;
+}
+.trabajo .trabajo-detalles {
+  background-color: #D9D9D9;
+  width: 100%;
+  height: 217px;
+  border-radius: 16px;
+}
+.trabajo .trabajo-detalles div {
+  display: none;
+}
+.trabajo .info-trabajo {
+  display: none;
+}
+
+.viendo-trabajo {
+  transition: 0.3s all;
+  align-self: flex-start;
+}
+.viendo-trabajo .trabajo-cont {
+  width: 341px;
+}
+.viendo-trabajo .trabajo-cont-img {
+  width: 263px;
+  height: 273px;
+  margin: 24px 0;
+}
+.viendo-trabajo .trabajo-detalles {
+  color: black;
+  padding: 35px 42px;
+  height: initial;
+}
+.viendo-trabajo .trabajo-detalles div {
+  display: block;
+  padding-bottom: 60px;
+}
+.viendo-trabajo .info-trabajo {
+  display: block;
+  position: relative;
+  margin-top: -720px;
+  margin-left: 26vw;
+  max-width: 15vw;
+  z-index: 3;
+}
+.viendo-trabajo .info-trabajo h2 {
+  margin-bottom: 28px;
+}
+.viendo-trabajo .info-trabajo p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: normal;
+}
+.viendo-trabajo .info-trabajo button {
+  background-color: #E3DB1D;
+  padding: 8px 16px;
+  color: #000;
+  font-size: 32px;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+.trabajo-left {
+  margin-left: -200px;
+}
+
+.portafolio-bt-D {
+  position: fixed;
+  height: 100%;
+  width: 8vw;
+  right: -10px;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(270deg, #09143C 15.16%, rgba(9, 20, 60, 0.1) 153.19%);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  z-index: 2;
+}
+.portafolio-bt-D button {
+  height: 100%;
+  background-color: transparent;
+  width: 80px;
+  border: 0;
+  display: flex;
+}
+.portafolio-bt-D button svg {
+  align-self: flex-end;
+  margin: 24px auto;
+  color: #D9D9D9;
+  font-size: 2em;
+}
+
+/* ############# Contenido Principal - Referencias ############# */
+.referecias {
+  width: 100%;
+  height: 100%;
+  padding: 7% 10% 0 10%;
+}
+
+.referencias-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.referencias-list div {
+  background-color: #D9D9D9;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  opacity: 0.6;
+}
+.referencias-list .activo {
+  width: 200px;
+  height: 200px;
+  opacity: 1;
+}
+
+.referencias-desc {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 36px;
+}
+
+form {
+  display: flex;
+}
+form .sujeto-referencia {
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 32px;
+}
+form .formulario-espacios {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+form .formulario-espacios .form-linkend {
+  height: 32px;
+  margin-bottom: 10px;
+}
+form .formulario-espacios textarea {
+  height: 120px;
+  margin-bottom: 10px;
+}
+form .formulario-espacios .form-submit {
+  background-color: #E3DB1D;
+  padding: 8px 16px;
+  color: #000;
+  font-size: 32px;
+  border-radius: 8px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 150px;
+}
+
+/* ############# Contenido Principal - Servicios ############# */
+.servicios {
+  width: 100%;
+  height: 100%;
+  padding: 46px 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.servicios-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.servicios-list div {
+  height: 60vh;
+}/*# sourceMappingURL=style.css.map */
