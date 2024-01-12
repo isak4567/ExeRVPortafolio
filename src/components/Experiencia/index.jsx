@@ -1,65 +1,63 @@
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { FaArrowLeft, FaArrowRight, FaBrain, FaKeyboard, FaCrosshairs } from "react-icons/fa";
 
-function TrExp(params) {
+function TrExp({info}) {
      
     return (
     <div className="experiencia-info">
 
         <div className="experiencia-top">
 
-            <div>
-                <img src="" alt="" />
-                <h2>Hecho x Nosotros</h2>
+            <div className="exp-titulo">
+                <h2>{info.eT1}</h2>
             </div>
 
-            <div>
-                <p>UX Researcher</p>
+            <div className="exp-puesto">
+                <p >{info.eT2}</p>
             </div>
 
-            <div>
-                <p>Desde: Julio/2023 Hasta: Enero/2024</p>
+            <div className="exp-fecha">
+                <p>{info.eT3}</p>
             </div>
 
         </div>
 
         <ul className="experiencia-descr">
-            <li>Desarrollar el procedimiento de investigación plasmado en trello.</li>
-            <li> Crear encuestas y realizar entrevistas a usuarios para obtener información cualitativa y cuantitativa.</li>
-            <li>Planificar una nueva arquitectura de información basada en los resultados obtenidos en la Card-Sorting y Treetesting.</li>
-            <li>Realicé pruebas A/B para el sitio web de la empresa, aumentando el puntaje de usabilidad de la versión anterior del sitio en un 78%.</li>
+            {info.eDesc.map((el) => <li>{el}</li>)}
         </ul>
 
         <div className="expSub-cont">
 
-            <div className="expSub-col">
+            <div className="expSub-col expSub-col-1">
                 <div className="expSub-tittle">
+                    <FaBrain />
                     <p>Aprendi</p>
                 </div>
                 <div className="expSub-list">
                     <ul>
-                        <li>Desarrollar</li>
+                        {info.aprendi.map((el) => <li>{el}</li>)}
                     </ul>
                 </div>
             </div>
 
-            <div className="expSub-col">
+            <div className="expSub-col expSub-col-2">
                 <div className="expSub-tittle">
+                    <FaKeyboard />
                     <p>Programas</p>
                 </div>
                 <div className="expSub-list">
-                    <ul>
-                        <li></li>
-                    </ul>
+                    {info.programas.map((el) =>
+                   { return  <img src={el} alt="" />})}
                 </div>
             </div>
 
-            <div className="expSub-col">
+            <div className="expSub-col expSub-col-3">
                 <div className="expSub-tittle">
+                    <FaCrosshairs />
                     <p>Soft Skils</p>
                 </div>
                 <div className="expSub-list">
                     <ul>
-                        <li></li>
+                        {info.sSkills.map((el) => <li>{el}</li>)}
                     </ul>
                 </div>
             </div>
@@ -72,6 +70,122 @@ function TrExp(params) {
 
 function Experiencia() {
 
+    const info = [
+        {
+            eT1: "Hecho x Nosotros",
+            eT2: "UX Researcher",
+            eT3: "Desde: Julio/2023 Hasta: Enero/2024",
+            eDesc: [
+                "Desarrollar el procedimiento de investigación plasmado en trello.",
+                "Crear encuestas y realizar entrevistas a usuarios para obtener información cualitativa y cuantitativa.",
+                "Planificar una nueva arquitectura de información basada en los resultados obtenidos en la Card-Sorting y Treetesting.",
+                "Realicé pruebas A/B para el sitio web de la empresa, aumentando el puntaje de usabilidad de la versión anterior del sitio en un 78%.",
+            ],
+            aprendi: [
+                "Desarrollar",
+            ],
+            programas: [
+                require("../../assets/img/programasYEst/figma.png"),
+                require("../../assets/img/programasYEst/adobe-photoshop.png"),
+                require("../../assets/img/programasYEst/ilustrador-adobe.png"),
+            ],
+            sSkills: [
+                "Trabajo en equipo.",
+                "Capacidad de análisis.",
+                "Resolución de problemas.",
+                "Liderazgo.",
+                "Comunicación efectiva.",
+                "Design Thinking.",
+                "Empatizar con el usuario.",
+                "Google Analitics.",
+                "English.",
+            ],
+        },
+        {
+            eT1: "Hecho x Nosotros",
+            eT2: "UX Researcher",
+            eT3: "Desde: Julio/2023 Hasta: Enero/2024",
+            eDesc: [
+                "",
+                "",
+                "",
+                "",
+            ],
+            aprendi: [
+                "Desarrollar",
+            ],
+            programas: [
+                "../../assets/img/programasYEst/",
+                "../../assets/img/programasYEst/",
+            ],
+            sSkills: [
+                "Trabajo en equipo.",
+                "Capacidad de análisis.",
+                "Resolución de problemas.",
+                "Comunicación efectiva.",
+                "Aprender nuevas habilidades.",
+                "Capacidad para enseñar.",
+                "Empatizar con el usuario.",
+            ],
+        },
+        {
+            eT1: "Hecho x Nosotros",
+            eT2: "UX Researcher",
+            eT3: "Desde: Julio/2023 Hasta: Enero/2024",
+            eDesc: [
+                "",
+                "",
+                "",
+                "",
+            ],
+            aprendi: [
+                "Desarrollar",
+            ],
+            programas: [
+                "../../assets/img/programasYEst/",
+                "../../assets/img/programasYEst/",
+            ],
+            sSkills: [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+            ],
+        },
+        {
+            eT1: "Hecho x Nosotros",
+            eT2: "UX Researcher",
+            eT3: "Desde: Julio/2023 Hasta: Enero/2024",
+            eDesc: [
+                "",
+                "",
+                "",
+                "",
+            ],
+            aprendi: [
+                "Desarrollar",
+            ],
+            programas: [
+                "../../assets/img/programasYEst/",
+                "../../assets/img/programasYEst/",
+            ],
+            sSkills: [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+            ],
+        },
+    ]
+
     
     
     return (
@@ -81,63 +195,19 @@ function Experiencia() {
 
                 <div className="exp-navCont">
                     <div className="exp-nav">
-                        <div className="exp-nav-img">
-                            <img src={require("../../assets/img/programasYEst/HXN.png")} alt="" />
-                        </div>
-
-                        <div className="exp-nav-esp1"></div>
-                        <div className="exp-nav-esp2"></div>
-                        <div className="exp-nav-esp3"></div>
-                        <div className="exp-nav-esp4"></div>
-                        <div className="exp-nav-esp5"></div>
-                        <div className="exp-nav-esp6"></div>
-                        <div className="exp-nav-esp7"></div>
-                        <div className="exp-nav-esp8"></div>
+                        <img src={require("../../assets/img/programasYEst/HXN.png")} alt="" />
                     </div>  
 
                     <div className="exp-nav">
-                        <div className="exp-nav-img">
-                            <img src={require("../../assets/img/programasYEst/Coder.png")} alt="" />
-                        </div>
-
-                        <div className="exp-nav-esp1"></div>
-                        <div className="exp-nav-esp2"></div>
-                        <div className="exp-nav-esp3"></div>
-                        <div className="exp-nav-esp4"></div>
-                        <div className="exp-nav-esp5"></div>
-                        <div className="exp-nav-esp6"></div>
-                        <div className="exp-nav-esp7"></div>
-                        <div className="exp-nav-esp8"></div>                      
+                        <img src={require("../../assets/img/programasYEst/Coder.png")} alt="" />                       
                     </div>
 
                     <div className="exp-nav">
-                        <div className="exp-nav-img">
-                            <img src={require("../../assets/img/programasYEst/Vector.png")} alt="" />
-                        </div>
-
-                        <div className="exp-nav-esp1"></div>
-                        <div className="exp-nav-esp2"></div>
-                        <div className="exp-nav-esp3"></div>
-                        <div className="exp-nav-esp4"></div>
-                        <div className="exp-nav-esp5"></div>
-                        <div className="exp-nav-esp6"></div>
-                        <div className="exp-nav-esp7"></div>
-                        <div className="exp-nav-esp8"></div>                      
+                        <img src={require("../../assets/img/programasYEst/Vector.png")} alt="" />                       
                     </div>
 
                     <div className="exp-nav">
-                        <div className="exp-nav-img">
-                            <img src={require("../../assets/img/programasYEst/Above.png")} alt="" />
-                        </div>
-
-                        <div className="exp-nav-esp1"></div>
-                        <div className="exp-nav-esp2"></div>
-                        <div className="exp-nav-esp3"></div>
-                        <div className="exp-nav-esp4"></div>
-                        <div className="exp-nav-esp5"></div>
-                        <div className="exp-nav-esp6"></div>
-                        <div className="exp-nav-esp7"></div>
-                        <div className="exp-nav-esp8"></div>                      
+                        <img src={require("../../assets/img/programasYEst/Above.png")} alt="" />                    
                     </div>
 
                 </div>
@@ -145,7 +215,7 @@ function Experiencia() {
                 <button>Siguiente <FaArrowRight /></button>
             </div>
 
-            <TrExp />
+            <TrExp info={info[0]} />
         </div>
     );
 }
