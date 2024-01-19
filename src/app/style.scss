@@ -156,11 +156,11 @@ body {
             font-size: 40px;
             color: $Color2;
         }
-        &:hover {
-            background-color: $Color3;
-            p {color: $Color1;}
-            svg {color: $Color1;}
-        }
+    }
+    .activo2 {
+        background-color: $Color3;
+        p {color: $Color1;}
+        svg {color: $Color1;}
     }
 }
 
@@ -209,45 +209,42 @@ body {
         justify-content: center;
         align-items: center;
         border-radius: 8px 8px 0 0;
-        
-
-        &:hover {
-            background-color:rgba(227, 219, 29, 0.20);
-            border: 2px solid $Color4;
-            border-bottom: none;
-            backdrop-filter: blur(7.5px);
-            z-index: 5;
-            &::before {
-                content: '';
-                width: 50px;
-                height: 50px;
-                position: absolute;
-                border-radius: 0 0 8px 0;
-                border: 2px solid $Color4;
-                border-left: none;
-                border-top: none;
-                margin-left: -134px;
-                margin-bottom: -38px;
-                z-index: 1;
-            }
-            
-            &::after {
-                content: '';
-                width: 50px;
-                height: 50px;
-                position: absolute;
-                border-radius: 0 0 0 8px;
-                border: 2px solid $Color4;
-                border-right: none;
-                border-top: none;
-                margin-right: -134px;
-                margin-bottom: -38px;
-                z-index: 1;
-            }
-        }
-
     }
 
+    .activo {
+        background-color:rgba(227, 219, 29, 0.20);
+        border: 2px solid $Color4;
+        border-bottom: none;
+        backdrop-filter: blur(7.5px);
+        z-index: 5;
+        &::before {
+            content: '';
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            border-radius: 0 0 8px 0;
+            border: 2px solid $Color4;
+            border-left: none;
+            border-top: none;
+            margin-left: -134px;
+            margin-bottom: -38px;
+            z-index: 1;
+        }
+        
+        &::after {
+            content: '';
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            border-radius: 0 0 0 8px;
+            border: 2px solid $Color4;
+            border-right: none;
+            border-top: none;
+            margin-right: -134px;
+            margin-bottom: -38px;
+            z-index: 1;
+        }
+    }
 }
 
 .experiencia-info {
@@ -259,8 +256,13 @@ body {
     background-color:rgba(227, 219, 29, 0.20);
     z-index: 1;
     margin-top: -2px;
-    display: grid;
+    display: none;
     grid-template-rows: min-content;
+    backdrop-filter: blur(7.5px);
+}
+
+.experiencia-info-activo {
+    display: grid;
 }
 
 .experiencia-top {
@@ -297,7 +299,7 @@ body {
         font-size: 20px;
         font-weight: 300;
         color: $Color4;
-        max-width: 220px;
+        max-width: 250px;
         padding: 0 20px 0 60px;
         line-height: 24px;
     }
@@ -365,6 +367,7 @@ body {
             padding: 16px;
             margin: 0 auto;
             display: flex;
+            flex-wrap: wrap;
             gap: 12px;
         }
     }
@@ -378,7 +381,172 @@ body {
     }
 }
 
+/* ============== SobreMi - Habilidad ============== */
+.Habilidades {
+    width: 100%;
+    height: 100%;
+    padding: calc(23% - 64px) 24px 64px 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    grid-template-areas: 
+    "col1 col2 col3"
+    "col1 col2 col3"
+    "col4 col2 col3"
+    ;
+    gap: 26px;
 
+    @for $i from 1 through 4 {
+        .col#{$i} {
+          grid-area: col#{$i};
+        }
+    }
+
+    .col {
+        border-radius: 8px;
+        border: 2px solid var(--color-4, #E3DB1D);
+        background: rgba(227, 219, 29, 0.20);
+        backdrop-filter: blur(7.5px);
+        .h-top {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 24px 0;
+            svg {
+                font-size: 32px;
+                color: $Color4;
+            }
+            p {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 300;
+                color: $Color4;
+                margin-left: 12px;
+            }
+        }
+    }
+
+    .col1, .col2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .h-cont {
+            display: flex;
+            flex-wrap: wrap;
+            width: 85%; 
+            gap: 12px;
+            img {
+                width: 48px;
+                height: 48px;
+            }
+        }
+    }
+
+    .col2 .h-cont {width: 60%;}
+    .col3 .h-cont {
+        padding-left: 50px;
+        li{
+            font-family: "Roboto";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 8px;
+        }
+    } 
+    .col4 .h-cont {
+        padding-left: 30px;
+        font-family: "Roboto";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+    }
+}
+
+/* ============== SobreMi - Educación ============== */
+.Educacion {
+    width: 100%;
+    height: 100%;
+    padding: calc(23% - 64px) 24px 64px 5%;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-areas: 
+    "col1 col2"
+    "col1 col2"
+    "col1 col3"
+    ;
+    gap: 26px;
+
+    @for $i from 1 through 3 {
+        .col#{$i} {
+          grid-area: col#{$i};
+        }
+    }
+
+    .col {
+        border-radius: 8px;
+        border: 2px solid var(--color-4, #E3DB1D);
+        background: rgba(227, 219, 29, 0.20);
+        backdrop-filter: blur(7.5px);
+        .h-top {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 24px 0;
+            svg {
+                font-size: 32px;
+            }
+            p {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 300;
+                margin-left: 12px;
+            }
+        }
+    }
+
+    .col1 .h-cont {
+        font-family: "Roboto";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 0 12px 0 24px;
+        li{
+            margin-bottom: 4px;
+        }
+    }
+
+    .edu-titulo {
+        width: 100%;
+        text-align: center;
+        h2 {
+            font-size: 32px;
+            font-style: normal;
+            line-height: 34px;
+            padding: 12px 16px;
+        }
+        div {
+            display: flex;
+            color: $Color4;
+            justify-content: center;
+            align-items: center;
+            p {
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 16px;
+                padding: 2px 8px;
+            }
+            .edu-fecha {
+                max-width: 40%;
+                border-left: 2px solid $Color4;
+            }
+        }
+
+    }
+}
 /* ############# Contenido Principal - Portafolio ############# */
 .lista-trabajos {
     height: 100%;
@@ -586,4 +754,9 @@ form {
     div {
         height: 60vh;
     }
+}
+
+/* ############# Clases Comunes ############# */
+.displayNone {
+    display: none;
 }

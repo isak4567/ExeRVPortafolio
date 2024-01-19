@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap");
 * {
   margin: 0;
@@ -150,13 +151,13 @@ body {
   font-size: 40px;
   color: #FFFFFF;
 }
-.SobreMi-nav div:hover {
+.SobreMi-nav .activo2 {
   background-color: #FA2F4C;
 }
-.SobreMi-nav div:hover p {
+.SobreMi-nav .activo2 p {
   color: #09143C;
 }
-.SobreMi-nav div:hover svg {
+.SobreMi-nav .activo2 svg {
   color: #09143C;
 }
 
@@ -206,7 +207,7 @@ body {
   align-items: center;
   border-radius: 8px 8px 0 0;
 }
-.exp-navCont .exp-nav:hover {
+.exp-navCont .activo {
   background-color: rgba(227, 219, 29, 0.2);
   border: 2px solid #E3DB1D;
   border-bottom: none;
@@ -214,7 +215,7 @@ body {
           backdrop-filter: blur(7.5px);
   z-index: 5;
 }
-.exp-navCont .exp-nav:hover::before {
+.exp-navCont .activo::before {
   content: "";
   width: 50px;
   height: 50px;
@@ -227,7 +228,7 @@ body {
   margin-bottom: -38px;
   z-index: 1;
 }
-.exp-navCont .exp-nav:hover::after {
+.exp-navCont .activo::after {
   content: "";
   width: 50px;
   height: 50px;
@@ -250,8 +251,14 @@ body {
   background-color: rgba(227, 219, 29, 0.2);
   z-index: 1;
   margin-top: -2px;
-  display: grid;
+  display: none;
   grid-template-rows: min-content;
+  -webkit-backdrop-filter: blur(7.5px);
+          backdrop-filter: blur(7.5px);
+}
+
+.experiencia-info-activo {
+  display: grid;
 }
 
 .experiencia-top {
@@ -286,7 +293,7 @@ body {
   font-size: 20px;
   font-weight: 300;
   color: #E3DB1D;
-  max-width: 220px;
+  max-width: 250px;
   padding: 0 20px 0 60px;
   line-height: 24px;
 }
@@ -350,6 +357,7 @@ body {
   padding: 16px;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
 }
 .expSub-cont .expSub-col-3 {
@@ -358,6 +366,171 @@ body {
 .expSub-cont .expSub-col-3 .expSub-list {
   padding: 16px 38px;
   padding-right: 0;
+}
+
+/* ============== SobreMi - Habilidad ============== */
+.Habilidades {
+  width: 100%;
+  height: 100%;
+  padding: calc(23% - 64px) 24px 64px 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr;
+  grid-template-areas: "col1 col2 col3" "col1 col2 col3" "col4 col2 col3";
+  gap: 26px;
+}
+.Habilidades .col1 {
+  grid-area: col1;
+}
+.Habilidades .col2 {
+  grid-area: col2;
+}
+.Habilidades .col3 {
+  grid-area: col3;
+}
+.Habilidades .col4 {
+  grid-area: col4;
+}
+.Habilidades .col {
+  border-radius: 8px;
+  border: 2px solid var(--color-4, #E3DB1D);
+  background: rgba(227, 219, 29, 0.2);
+  -webkit-backdrop-filter: blur(7.5px);
+          backdrop-filter: blur(7.5px);
+}
+.Habilidades .col .h-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 24px 0;
+}
+.Habilidades .col .h-top svg {
+  font-size: 32px;
+  color: #E3DB1D;
+}
+.Habilidades .col .h-top p {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  color: #E3DB1D;
+  margin-left: 12px;
+}
+.Habilidades .col1, .Habilidades .col2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Habilidades .col1 .h-cont, .Habilidades .col2 .h-cont {
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+  gap: 12px;
+}
+.Habilidades .col1 .h-cont img, .Habilidades .col2 .h-cont img {
+  width: 48px;
+  height: 48px;
+}
+.Habilidades .col2 .h-cont {
+  width: 60%;
+}
+.Habilidades .col3 .h-cont {
+  padding-left: 50px;
+}
+.Habilidades .col3 .h-cont li {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+.Habilidades .col4 .h-cont {
+  padding-left: 30px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* ============== SobreMi - Educación ============== */
+.Educacion {
+  width: 100%;
+  height: 100%;
+  padding: calc(23% - 64px) 24px 64px 5%;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-areas: "col1 col2" "col1 col2" "col1 col3";
+  gap: 26px;
+}
+.Educacion .col1 {
+  grid-area: col1;
+}
+.Educacion .col2 {
+  grid-area: col2;
+}
+.Educacion .col3 {
+  grid-area: col3;
+}
+.Educacion .col {
+  border-radius: 8px;
+  border: 2px solid var(--color-4, #E3DB1D);
+  background: rgba(227, 219, 29, 0.2);
+  -webkit-backdrop-filter: blur(7.5px);
+          backdrop-filter: blur(7.5px);
+}
+.Educacion .col .h-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 24px 0;
+}
+.Educacion .col .h-top svg {
+  font-size: 32px;
+}
+.Educacion .col .h-top p {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  margin-left: 12px;
+}
+.Educacion .col1 .h-cont {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 12px 0 24px;
+}
+.Educacion .col1 .h-cont li {
+  margin-bottom: 4px;
+}
+.Educacion .edu-titulo {
+  width: 100%;
+  text-align: center;
+}
+.Educacion .edu-titulo h2 {
+  font-size: 32px;
+  font-style: normal;
+  line-height: 34px;
+  padding: 12px 16px;
+}
+.Educacion .edu-titulo div {
+  display: flex;
+  color: #E3DB1D;
+  justify-content: center;
+  align-items: center;
+}
+.Educacion .edu-titulo div p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  padding: 2px 8px;
+}
+.Educacion .edu-titulo div .edu-fecha {
+  max-width: 40%;
+  border-left: 2px solid #E3DB1D;
 }
 
 /* ############# Contenido Principal - Portafolio ############# */
@@ -560,4 +733,9 @@ form .formulario-espacios .form-submit {
 }
 .servicios-list div {
   height: 60vh;
+}
+
+/* ############# Clases Comunes ############# */
+.displayNone {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
