@@ -458,7 +458,7 @@ body {
   height: 100%;
   padding: calc(23% - 64px) 24px 64px 5%;
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1fr 1.2fr;
   grid-template-areas: "col1 col2" "col1 col2" "col1 col3";
   gap: 26px;
 }
@@ -500,29 +500,33 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding: 0 12px 0 24px;
+  padding: 0 12px 0 42px;
 }
 .Educacion .col1 .h-cont li {
   margin-bottom: 4px;
 }
 .Educacion .edu-titulo {
   width: 100%;
-  text-align: center;
 }
 .Educacion .edu-titulo h2 {
+  text-align: center;
+  width: initial;
   font-size: 32px;
   font-style: normal;
+  font-weight: 400;
   line-height: 34px;
   padding: 12px 16px;
+  letter-spacing: 0.05rem;
 }
 .Educacion .edu-titulo div {
   display: flex;
   color: #E3DB1D;
   justify-content: center;
   align-items: center;
+  margin-bottom: 16px;
 }
 .Educacion .edu-titulo div p {
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 16px;
@@ -531,6 +535,107 @@ body {
 .Educacion .edu-titulo div .edu-fecha {
   max-width: 40%;
   border-left: 2px solid #E3DB1D;
+}
+.Educacion .col2 .h-top {
+  color: #E3DB1D;
+}
+.Educacion .col2 .h-cont {
+  padding: 0 0 16px 20px;
+}
+.Educacion .col2 .h-cont p {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+.Educacion .col2 .h-cont p span {
+  color: #E3DB1D;
+  margin-right: 4px;
+  font-family: "Oswald";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.Educacion .col3 {
+  border-color: #FFFFFF;
+}
+.Educacion .col3 .h-cont {
+  padding-left: 20px;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+.Educacion .col3 .h-cont p:first-child {
+  font-family: "Oswald";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.Educacion .col3 .h-cont span {
+  color: #E3DB1D;
+}
+
+/* ============== SobreMi - Valóres ============== */
+.Valores {
+  width: 100%;
+  height: 100%;
+  padding: 46px 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Valores .valores-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: end;
+  gap: 24px;
+}
+.Valores .valores-list .valores-cont {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  width: 30%;
+  border-radius: 8px;
+  border: 2px solid var(--color-4, #E3DB1D);
+  background: var(--cuadro, rgba(227, 219, 29, 0.2));
+  -webkit-backdrop-filter: blur(7.5px);
+          backdrop-filter: blur(7.5px);
+  margin-bottom: 32px;
+}
+.Valores .valores-list .valores-cont img {
+  height: 180px;
+  margin-top: -65px;
+  justify-self: center;
+  align-self: center;
+}
+.Valores .valores-list .valores-cont p {
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 4px;
+  margin: 12px 0 32px 0;
+  padding: 0 20px;
+}
+.Valores .valores-list .valores-cont .v-tittle {
+  font-family: "Oswald";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: #E3DB1D;
 }
 
 /* ############# Contenido Principal - Portafolio ############# */
@@ -730,9 +835,79 @@ form .formulario-espacios .form-submit {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  gap: 24px;
 }
-.servicios-list div {
+.servicios-list .servicio-cont {
+  display: flex;
+  flex-direction: column;
   height: 60vh;
+  width: 25%;
+  border-radius: 8px;
+  border: 2px solid var(--color-4, #E3DB1D);
+  background: var(--cuadro, rgba(227, 219, 29, 0.2));
+  -webkit-backdrop-filter: blur(7.5px);
+          backdrop-filter: blur(7.5px);
+  margin-bottom: 32px;
+}
+.servicios-list .servicio-cont img {
+  height: 180px;
+  margin-top: -65px;
+  justify-self: center;
+  align-self: center;
+}
+.servicios-list .servicio-cont p {
+  text-align: center;
+  font-family: "Oswald";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: #E3DB1D;
+  margin: 12px 0 32px 0;
+}
+.servicios-list .servicio-cont ul {
+  padding-left: 24px;
+}
+.servicios-list .servicio-cont ul li {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 4px;
+}
+.servicios-list .servicio-cont .s-m {
+  font-family: "Roboto";
+  font-size: 14px;
+  width: 80%;
+  align-self: center;
+}
+.servicios-list .servicio-cont .s-m span {
+  font-weight: 700;
+}
+
+.callToAction {
+  display: flex;
+  align-items: center;
+}
+.callToAction p {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  width: 70%;
+  margin-right: 32px;
+}
+.callToAction button {
+  border: none;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  color: #FFFFFF;
+  border-radius: 8px;
+  background: var(--color-1, #09143C);
+  box-shadow: 0px 4px 15px 0px rgba(252, 97, 94, 0.35);
+  padding: 8px;
 }
 
 /* ############# Clases Comunes ############# */

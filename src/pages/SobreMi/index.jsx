@@ -1,11 +1,11 @@
 
 import { useState } from "react";
-import { Layout, Experiencia, Habilidad, Educacion } from "../../components";
+import { Layout, Experiencia, Habilidad, Educacion, Valores } from "../../components";
 import { FaChalkboardTeacher, FaStar, FaBook, FaBookmark } from "react-icons/fa";
 
 function SobreMi(props) {
 
-    const [botonActivo2, setBotonActivo2] = useState(0);
+    const [botonActivo2, setBotonActivo2] = useState(1);
 
     const HandlerBoton2 = (seccion) => {
         setBotonActivo2(seccion);
@@ -42,10 +42,10 @@ function SobreMi(props) {
                 </div>
 
                 <div className="SobreMi-Seccion">
-
                     <Experiencia activo={botonActivo2}/>
                     <Habilidad activo={botonActivo2} />
                     <Educacion activo={botonActivo2} />
+                    <Valores activo={botonActivo2} />
                 </div>
 
             </div>

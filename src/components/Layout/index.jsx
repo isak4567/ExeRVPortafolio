@@ -20,17 +20,17 @@ function Layout({ children }) {
                 <div className={`Foto-Perfil ${botonActivo > 0 && "Foto-Perfil-img" }`}></div>
 
                 <div className="Cont-Nav">
-                    <NavLink to={`/SobreMi`} 
-                    className={`Nav-Botones ${botonActivo === 1 && "activo" }`} 
-                    onClick={() => HandlerBoton(1)}>
-                        <img src={require("../../assets/img/personal.png")} alt="" />
-                        <button>Sobre mi</button>
-                    </NavLink>
                     <NavLink to={`/Portafolio`} 
                     className={`Nav-Botones ${botonActivo === 2 && "activo" }`} 
                     onClick={() => HandlerBoton(2)}>
                         <img src={require("../../assets/img/trabajos.png")} alt="" />
                         <button>Portafolio</button>
+                    </NavLink>
+                    <NavLink to={`/SobreMi`} 
+                    className={`Nav-Botones ${botonActivo === 1 && "activo" }`} 
+                    onClick={() => HandlerBoton(1)}>
+                        <img src={require("../../assets/img/personal.png")} alt="" />
+                        <button>Sobre mi</button>
                     </NavLink>
                     <NavLink to={`/Servicios`} 
                     className={`Nav-Botones ${botonActivo === 3 && "activo" }`} 

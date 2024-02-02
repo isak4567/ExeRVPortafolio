@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 function Portafolio(props) {
 
-    const [ active, setActive ] = useState(-1);
+    const [ active, setActive ] = useState(0);
     const [ move, setBackmove ] = useState(0);
 
     const divStyle = {

@@ -37,19 +37,19 @@ function Educacion({activo}) {
                         UX Writing - Coder House
                     </p>
                     <p>
-                        <spas>06/22</spas>
+                        <span>06/22</span>
                         Advanced UX/UI Design - Coder House
                     </p>
                     <p>
-                        <spas>12/21</spas>
+                        <span>12/21</span>
                         UX/UI Design - Coder House
                     </p>
                     <p>
-                        <spas>05/21</spas>
+                        <span>05/21</span>
                         (UX) - Fundación Carlos Slim
                     </p>
                     <p>
-                        <spas>06/18</spas>
+                        <span>06/18</span>
                         Diseño y comunicación - Buro Coworking
                     </p>
                 </div>
@@ -62,7 +62,7 @@ function Educacion({activo}) {
                 </div>
 
                 <div className="h-cont">
-                    <p>2021 - 1º Lugar</p>
+                    <p>2021 - <span>1º Lugar</span></p>
                     <p>Innovation Award for Inclusion - Ing. Kohanoff</p>
                 </div>
             </div>

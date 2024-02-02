@@ -469,7 +469,7 @@ body {
     height: 100%;
     padding: calc(23% - 64px) 24px 64px 5%;
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 1.2fr;
     grid-template-areas: 
     "col1 col2"
     "col1 col2"
@@ -512,7 +512,7 @@ body {
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        padding: 0 12px 0 24px;
+        padding: 0 12px 0 42px;
         li{
             margin-bottom: 4px;
         }
@@ -520,20 +520,24 @@ body {
 
     .edu-titulo {
         width: 100%;
-        text-align: center;
         h2 {
+            text-align: center;
+            width: initial;
             font-size: 32px;
             font-style: normal;
+            font-weight: 400;
             line-height: 34px;
             padding: 12px 16px;
+            letter-spacing: .05rem;
         }
         div {
             display: flex;
             color: $Color4;
             justify-content: center;
             align-items: center;
+            margin-bottom: 16px;
             p {
-                font-size: 18px;
+                font-size: 16px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 16px;
@@ -546,7 +550,114 @@ body {
         }
 
     }
+
+    .col2 {
+        .h-top {
+            color: $Color4;
+        }
+        .h-cont {
+            padding: 0 0 16px 20px;
+            p {
+                font-family: "Roboto";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-bottom: 16px;
+                span {
+                    color: $Color4;
+                    margin-right: 4px;
+                    font-family: "Oswald";
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+
+    .col3 {
+        border-color: $Color2;
+        .h-cont {
+            padding-left: 20px;
+            font-family: "Roboto";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 16px;
+            p:first-child {
+                font-family: "Oswald";
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+            span {
+                color: $Color4;
+            }
+        }
+    }
 }
+
+/* ============== SobreMi - Valóres ============== */
+.Valores {
+    width: 100%;
+    height: 100%;
+    padding: 46px 34px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .valores-list {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: end;
+        gap: 24px;
+        .valores-cont {
+            display: flex;
+            flex-direction: column;
+            height: 60vh;
+            width: 30%;
+            border-radius: 8px;
+            border: 2px solid var(--color-4, #E3DB1D);
+            background: var(--cuadro, rgba(227, 219, 29, 0.20));
+            backdrop-filter: blur(7.5px);
+            margin-bottom: 32px;
+            img {
+                height: 180px;
+                margin-top: -65px;
+                justify-self: center;
+                align-self: center;
+            }
+            p{
+                text-align: center;
+                font-family: 'Roboto';
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-bottom: 4px;
+                margin: 12px 0 32px 0;
+                padding: 0 20px;
+            }
+            .v-tittle {
+                font-family: 'Oswald';
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                color: $Color4;
+            }
+
+        }
+    }
+}
+
 /* ############# Contenido Principal - Portafolio ############# */
 .lista-trabajos {
     height: 100%;
@@ -751,8 +862,78 @@ form {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    div {
+    gap: 24px;
+    .servicio-cont {
+        display: flex;
+        flex-direction: column;
         height: 60vh;
+        width: 25%;
+        border-radius: 8px;
+        border: 2px solid var(--color-4, #E3DB1D);
+        background: var(--cuadro, rgba(227, 219, 29, 0.20));
+        backdrop-filter: blur(7.5px);
+        margin-bottom: 32px;
+        img {
+            height: 180px;
+            margin-top: -65px;
+            justify-self: center;
+            align-self: center;
+        }
+        p{
+            text-align: center;
+            font-family: 'Oswald';
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            color: $Color4;
+            margin: 12px 0 32px 0;
+        }
+        ul {
+            padding-left: 24px;
+            li {
+                font-family: 'Roboto';
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-bottom: 4px;
+            }
+        }
+        .s-m {
+            font-family: 'Roboto';
+            font-size: 14px;
+            width: 80%;
+            align-self: center;
+            span {
+                font-weight: 700;
+            }
+        }
+
+    }
+}
+
+.callToAction {
+    display: flex;
+    align-items: center;
+    p {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        width: 70%;
+        margin-right: 32px;
+    }
+    button {
+        border: none;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        color: $Color2;
+        border-radius: 8px;
+        background: var(--color-1, #09143C);
+        box-shadow: 0px 4px 15px 0px rgba(252, 97, 94, 0.35);
+        padding: 8px;
     }
 }
 
