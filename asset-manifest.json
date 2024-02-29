@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/Practica-React-ToDoList/static/css/main.e14982ff.css",
+    "main.js": "/Practica-React-ToDoList/static/js/main.00db0ec6.js",
+    "static/media/backgroundImage.png": "/Practica-React-ToDoList/static/media/backgroundImage.d9449eb18aa1247dada0.png",
+    "static/media/perfil2.png": "/Practica-React-ToDoList/static/media/perfil2.63c829852fcdb0a5fa9a.png",
+    "static/media/HxN-B.png": "/Practica-React-ToDoList/static/media/HxN-B.2b6520658abeac0661f8.png",
+    "static/media/YGG-B.png": "/Practica-React-ToDoList/static/media/YGG-B.e3a42f3555ce65da9b8d.png",
+    "static/media/EMD-B.png": "/Practica-React-ToDoList/static/media/EMD-B.38077593ac06ffbd3712.png",
+    "static/media/VALEN-B.png": "/Practica-React-ToDoList/static/media/VALEN-B.8339822f5bbfc14cc247.png",
+    "static/media/APOYO-B.png": "/Practica-React-ToDoList/static/media/APOYO-B.cb2aa3fb25b8ade04b29.png",
+    "static/media/Crossfy-B.png": "/Practica-React-ToDoList/static/media/Crossfy-B.789ccec9d5f527236d8c.png",
+    "static/media/PRO-B.png": "/Practica-React-ToDoList/static/media/PRO-B.11efd0743f52a0fcc87e.png",
+    "static/media/charly.png": "/Practica-React-ToDoList/static/media/charly.a93cf4dfba90cf1e3d4b.png",
+    "static/media/HP2-B.png": "/Practica-React-ToDoList/static/media/HP2-B.893df194bfb40fd7fdb0.png",
+    "static/media/SMS-B.png": "/Practica-React-ToDoList/static/media/SMS-B.f78cab629bba54dc80e8.png",
+    "static/media/augusto.png": "/Practica-React-ToDoList/static/media/augusto.8c0b25822b5a3fc1ea07.png",
+    "static/media/samir.png": "/Practica-React-ToDoList/static/media/samir.63c406fa84ce56bf6fbb.png",
+    "static/media/perfil.png": "/Practica-React-ToDoList/static/media/perfil.77cc6b34a80032424789.png",
+    "static/media/alpaca.png": "/Practica-React-ToDoList/static/media/alpaca.c8de0f0ed1282b152c14.png",
+    "static/media/INDEMNIZAR-B.png": "/Practica-React-ToDoList/static/media/INDEMNIZAR-B.a67f0c7938644c8b5eab.png",
+    "static/media/denu.png": "/Practica-React-ToDoList/static/media/denu.f4c529456d57afa521ce.png",
+    "static/media/neme.png": "/Practica-React-ToDoList/static/media/neme.1e3f7e4f0a841767999b.png",
+    "static/media/ALA-B.png": "/Practica-React-ToDoList/static/media/ALA-B.63dd7494b360275e6994.png",
+    "static/media/mini-yo-2.png": "/Practica-React-ToDoList/static/media/mini-yo-2.de0217f5074d58556c84.png",
+    "static/media/mini-yo-1.png": "/Practica-React-ToDoList/static/media/mini-yo-1.ced3574db98150aa8e22.png",
+    "static/media/mini-yo-6.png": "/Practica-React-ToDoList/static/media/mini-yo-6.4839e1923d29f8d2145c.png",
+    "static/media/mini-yo-5.png": "/Practica-React-ToDoList/static/media/mini-yo-5.41668f32194c6b053ded.png",
+    "static/media/mini-yo-7.png": "/Practica-React-ToDoList/static/media/mini-yo-7.e21afcae177c356f4f25.png",
+    "static/media/mini-yo-3.png": "/Practica-React-ToDoList/static/media/mini-yo-3.aca3fc10e0c010287443.png",
+    "index.html": "/Practica-React-ToDoList/index.html",
+    "main.e14982ff.css.map": "/Practica-React-ToDoList/static/css/main.e14982ff.css.map",
+    "main.00db0ec6.js.map": "/Practica-React-ToDoList/static/js/main.00db0ec6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e14982ff.css",
+    "static/js/main.00db0ec6.js"
+  ]
+}
