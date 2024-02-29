@@ -2,7 +2,7 @@
   "name": "above",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://isak4567.github.io/ExeRVPortafolio/",
+  "homepage": "http://isak4567.github.io/ExeRVPortafolio/bulid",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
