@@ -59,11 +59,11 @@ function Referencias(props) {
                 </div>
                 <p className="referencias-desc">{referencia}</p>
 
-                <form>
+                <form action="https://formsubmit.co/exe116robles@gmail.com" method="POST">
                     <p className="sujeto-referencia">Link de tu linked in</p>
                     <div className="formulario-espacios">
-                        <input className="form-linkend" type="text" />
-                        <textarea 
+                        <input className="form-linkend" type="text" name="Linkedin"/>
+                        <textarea name="ExperienciaConmpartida"
                         placeholder="deja un comentario de como fue tu experiencia"></textarea>
                         <input className="form-submit" type="submit" />
                     </div>
