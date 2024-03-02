@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ExeRVPortafolio/static/css/main.d5a297f3.css",
+    "main.css": "/ExeRVPortafolio/static/css/main.8836c051.css",
     "main.js": "/ExeRVPortafolio/static/js/main.e9d18b29.js",
     "static/media/backgroundImage.png": "/ExeRVPortafolio/static/media/backgroundImage.d9449eb18aa1247dada0.png",
     "static/media/perfil2.png": "/ExeRVPortafolio/static/media/perfil2.63c829852fcdb0a5fa9a.png",
@@ -29,11 +29,11 @@
     "static/media/mini-yo-7.png": "/ExeRVPortafolio/static/media/mini-yo-7.e21afcae177c356f4f25.png",
     "static/media/mini-yo-3.png": "/ExeRVPortafolio/static/media/mini-yo-3.aca3fc10e0c010287443.png",
     "index.html": "/ExeRVPortafolio/index.html",
-    "main.d5a297f3.css.map": "/ExeRVPortafolio/static/css/main.d5a297f3.css.map",
+    "main.8836c051.css.map": "/ExeRVPortafolio/static/css/main.8836c051.css.map",
     "main.e9d18b29.js.map": "/ExeRVPortafolio/static/js/main.e9d18b29.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5a297f3.css",
+    "static/css/main.8836c051.css",
     "static/js/main.e9d18b29.js"
   ]
 }
