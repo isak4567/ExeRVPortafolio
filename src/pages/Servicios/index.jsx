@@ -1,8 +1,7 @@
 
-import { Layout } from "../../components";
 
 
-function Servicios(props) {
+function Servicios({activo}) {
 
     const inf2 = [
         `Planificar investigación.
@@ -31,61 +30,57 @@ function Servicios(props) {
         Establecer metas`.split("."),
     ]
     
-    return (
-        <Layout>  
+    return ( 
+        <div className={`servicios ${activo !== 3 && "displayNone"}`}>
+            <div className="servicios-list">
+                <div className="servicio-cont">
+                    <img src={require("../../assets/img/mini-yo-4.png")} alt="" />
 
-            <div className="servicios">
-                <div className="servicios-list">
-                    <div className="servicio-cont">
-                        <img src={require("../../assets/img/mini-yo-4.png")} alt="" />
+                    <p>UX Research</p>
 
-                        <p>UX Research</p>
-
-                        <ul>
-                            {inf2[0].map((el) => <li>{el}.</li>)}
-                        </ul>
-                    </div>
-
-                    <div className="servicio-cont">
-                        <img src={require("../../assets/img/mini-yo-3.png")} alt="" />
-
-                        <p>Diseñar Interfaz (UI)</p>
-
-                        <ul>
-                            {inf2[1].map((el) => <li>{el}.</li>)}
-                        </ul>
-                    </div>
-
-                    <div className="servicio-cont">
-                        <img src={require("../../assets/img/mini-yo-2.png")} alt="" />
-
-                        <p>Liderar un proyecto</p>
-
-                        <ul>
-                            {inf2[2].map((el) => <li>{el}.</li>)}
-                        </ul>
-                    </div>
-
-                    <div className="servicio-cont">
-                        <img src={require("../../assets/img/mini-yo-1.png")} alt="" />
-
-                        <p>Mentorear Personal UX</p>
-
-                        <ul>
-                            {inf2[3].map((el) => <li>{el}.</li>)}
-                        </ul>
-
-                        <p className="s-m"><span>Servicio no renumerado</span> me apasiona el UX y la gente que comparte dicha pasión.</p>
-                    </div>
+                    <ul>
+                        {inf2[0].map((el) => <li>{el}.</li>)}
+                    </ul>
                 </div>
 
-                <div className="callToAction">
-                    <p>Si necesitas guia sobre tu proyecto, producto o equipo, no dudes en comunicarte conmigo. Hacer el esfuerzo para que empecemos a hablar ya es un gran comienzo.</p>
-                    <button>Link a linked in</button>
+                <div className="servicio-cont">
+                    <img src={require("../../assets/img/mini-yo-3.png")} alt="" />
+
+                    <p>Diseñar Interfaz (UI)</p>
+
+                    <ul>
+                        {inf2[1].map((el) => <li>{el}.</li>)}
+                    </ul>
+                </div>
+
+                <div className="servicio-cont">
+                    <img src={require("../../assets/img/mini-yo-2.png")} alt="" />
+
+                    <p>Liderar un proyecto</p>
+
+                    <ul>
+                        {inf2[2].map((el) => <li>{el}.</li>)}
+                    </ul>
+                </div>
+
+                <div className="servicio-cont">
+                    <img src={require("../../assets/img/mini-yo-1.png")} alt="" />
+
+                    <p>Mentorear Personal UX</p>
+
+                    <ul>
+                        {inf2[3].map((el) => <li>{el}.</li>)}
+                    </ul>
+
+                    <p className="s-m"><span>Servicio no renumerado</span> me apasiona el UX y la gente que comparte dicha pasión.</p>
                 </div>
             </div>
 
-        </Layout>
+            <div className="callToAction">
+                <p>Si necesitas guia sobre tu proyecto, producto o equipo, no dudes en comunicarte conmigo. Hacer el esfuerzo para que empecemos a hablar ya es un gran comienzo.</p>
+                <button>Link a linked in</button>
+            </div>
+        </div>
     );
 }
 

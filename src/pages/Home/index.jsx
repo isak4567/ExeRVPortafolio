@@ -1,13 +1,11 @@
-
-import { Layout } from "../../components/Layout";
-
-function Home(props) {
+import { useState } from "react";
 
 
+function Home({activo}) {
 
-    
+
     return (
-        <Layout>            
+        <div className={`home ${activo !== 0 && "displayNone"}`}>            
             
             <img className="img-sujeto" src={require("../../assets/img/perfil.png")} alt="" />
 
@@ -16,7 +14,7 @@ function Home(props) {
                 <h2>Busco elevar las experiencias.</h2>
             </div>
 
-        </Layout>
+        </div>
     );
 }
 

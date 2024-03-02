@@ -67,12 +67,14 @@ body {
 }
 
 .Nav-Botones {
+  cursor: pointer;
   width: 100%;
   padding: 16px 24px;
   display: flex;
   text-decoration: none;
 }
 .Nav-Botones button {
+  cursor: pointer;
   background-color: transparent;
   color: #FFFFFF;
   font-size: 32px;
@@ -81,13 +83,16 @@ body {
 .Nav-Botones img {
   margin-right: 24px;
 }
+.Nav-Botones:hover {
+  box-shadow: inset 0px 0px 0px 2px rgba(250, 47, 77, 0.5215686275), 0px 0px 5px 0px rgba(250, 47, 77, 0.5215686275);
+}
 
 .Links {
   margin-left: 24%;
   font-size: 16px;
 }
 .Links p {
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 .Links p svg {
   margin-right: 8px;
@@ -97,6 +102,7 @@ body {
 .Cont-Principal {
   width: 74.74%;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   overflow: scroll;
 }
@@ -115,6 +121,12 @@ body {
           text-decoration: dashed;
 }
 
+.home {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
 .img-sujeto {
   height: 80vh;
   margin-top: 10%;
@@ -129,9 +141,11 @@ body {
   width: 100%;
   height: 100%;
   padding: 24px 24px 24px 5%;
+  animation: upDown 0.3s 1 forwards;
 }
 
 .lista-trabajos {
+  cursor: pointer;
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -150,6 +164,7 @@ body {
 }
 
 .trabajo {
+  animation: rightCenter 0.3s 1 forwards;
   width: 100%;
 }
 .trabajo .trabajo-cont {
@@ -160,7 +175,7 @@ body {
   display: flex;
   width: 400px;
   margin-right: 40px;
-  justify-content: center;
+  align-items: center;
 }
 .trabajo .info-trabajo {
   height: 285px;
@@ -224,6 +239,7 @@ body {
 .SobreMi {
   width: 100%;
   display: flex;
+  animation: upDown 0.3s 1 forwards;
 }
 
 .SobreMi-nav {
@@ -238,6 +254,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .SobreMi-nav div p {
   font-size: 20px;
@@ -274,8 +291,10 @@ body {
   display: flex;
   width: 100%;
   align-items: flex-end;
+  cursor: pointer;
 }
 .experiencias-nav button {
+  cursor: pointer;
   display: flex;
   align-items: center;
   width: 15%;
@@ -740,6 +759,7 @@ body {
   width: 100%;
   height: 100%;
   padding: 7% 10% 0 10%;
+  animation: upDown 0.3s 1 forwards;
 }
 
 .refencias-cont {
@@ -764,11 +784,13 @@ body {
   width: 100px;
   height: 100px;
   opacity: 0.6;
+  cursor: pointer;
 }
 .referencias-list div img {
   width: 100%;
 }
 .referencias-list .activo {
+  cursor: default;
   width: 200px;
   height: 200px;
   opacity: 1;
@@ -778,6 +800,7 @@ body {
   font-size: 20px;
   font-weight: 300;
   margin-bottom: 36px;
+  height: 140px;
 }
 
 form {
@@ -821,6 +844,8 @@ form .formulario-espacios .form-submit {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transform: translateY(-100%);
+  animation: upDown 0.3s 0.2s 1 forwards;
 }
 
 .servicios-list {
@@ -900,9 +925,39 @@ form .formulario-espacios .form-submit {
   background: var(--color-1, #09143C);
   box-shadow: 0px 4px 15px 0px rgba(252, 97, 94, 0.35);
   padding: 8px;
+  cursor: pointer;
 }
 
 /* ############# Clases Comunes ############# */
 .displayNone {
   display: none;
+}
+
+.centerDown {
+  animation: centerDown 0.3s 0.05s 1 forwards;
+}
+
+@keyframes centerDown {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(130%);
+  }
+}
+@keyframes rightCenter {
+  0% {
+    transform: translateX(130%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes upDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }/*# sourceMappingURL=style.css.map */

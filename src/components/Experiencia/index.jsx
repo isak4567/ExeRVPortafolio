@@ -206,11 +206,23 @@ function Experiencia({activo}) {
     const HandlerBoton = (seccion) => {
         setBotonActivo(seccion);
     };   
+
+    const HandlerArrows = (condition) => {
+        if (condition === "-") {
+            if (botonActivo === 1) {
+                setBotonActivo(4);
+            } else setBotonActivo(botonActivo-1);
+        } else {
+            if (botonActivo === 4) {
+                setBotonActivo(1);
+            } else setBotonActivo(botonActivo+1);
+        }
+    };
     
     return (
         <div className={`Experiencia ${activo !== 1 && "displayNone" }`}>
             <div className="experiencias-nav">
-                <button> <FaArrowLeft /> Anterior</button>
+                <button onClick={() => HandlerArrows("-")}> <FaArrowLeft /> Anterior</button>
 
                 <div className="exp-navCont">
                     <div 
@@ -239,7 +251,7 @@ function Experiencia({activo}) {
 
                 </div>
 
-                <button>Siguiente <FaArrowRight /></button>
+                <button onClick={() => HandlerArrows("+")}>Siguiente <FaArrowRight /></button>
             </div>
 
             <TrExp info={info[0]} cond={1} botonActivo={botonActivo} />

@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { Layout } from "../../components";
 
-function Referencias(props) {
+function Referencias({activo}) {
     const info4 = [
         {
             foto: "augusto",
@@ -40,39 +39,36 @@ function Referencias(props) {
     const HandlerBoton3 = (num, text) => {
         setBotonActivo(num);
         setReferencia(text);
-        setMove(num*16.7);
+        setMove(num*16.9);
     };
     
     return (
-        <Layout>            
-            
-            <div className="referecias">
+           
+        <div className={`referecias ${activo !== 4 && "displayNone"}`}>
 
-                <div className="refencias-cont">
-                    <div style={divStyle} className="referencias-list">
-                      {info4.map((el, index) => 
-                      (<div className={`${botonActivo === index && "activo" }`} 
-                        onClick={() => HandlerBoton3(index, el.comentario)} >
-                            <img src={require(`../../assets/img/${el.foto}.png`)} />
-                        </div>))}
-                    </div>
+            <div className="refencias-cont">
+                <div style={divStyle} className="referencias-list">
+                    {info4.map((el, index) => 
+                    (<div className={`${botonActivo === index && "activo" }`} 
+                    onClick={() => HandlerBoton3(index, el.comentario)} >
+                        <img src={require(`../../assets/img/${el.foto}.png`)} />
+                    </div>))}
                 </div>
-                <p className="referencias-desc">{referencia}</p>
-
-                <form action="https://formsubmit.co/exe116robles@gmail.com" method="POST">
-                    <p className="sujeto-referencia">Link de tu linked in</p>
-                    <div className="formulario-espacios">
-                        <input className="form-linkend" type="text" name="Linkedin"/>
-                        <textarea name="ExperienciaConmpartida"
-                        placeholder="deja un comentario de como fue tu experiencia"></textarea>
-                        <input className="form-submit" type="submit" />
-                    </div>
-                </form>
-
             </div>
-            
+            <p className="referencias-desc">{referencia}</p>
 
-        </Layout>
+            <form action="https://formsubmit.co/exe116robles@gmail.com" method="POST">
+                <p className="sujeto-referencia">Link de tu linked in</p>
+                <div className="formulario-espacios">
+                    <input className="form-linkend" type="text" name="Linkedin"/>
+                    <textarea name="ExperienciaConmpartida"
+                    placeholder="deja un comentario de como fue tu experiencia"></textarea>
+                    <input className="form-submit" type="submit" />
+                </div>
+            </form>
+
+        </div>
+            
     );
 }
 
