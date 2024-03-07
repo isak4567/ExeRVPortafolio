@@ -11,12 +11,14 @@ function Trabajo({active, number, info}) {
             <div className="trabajo-cont">
                 <div className="trabajo-img">
                     <img src={info.portada} alt="" />
+                    <a href="http://" target="_blank" rel="noopener noreferrer"></a>
                 </div>
 
                 <div className="info-trabajo">
                     <h2>{info.titulo}</h2>
                     {info.desc.map((el) => <p>{el}</p>)}
-                    <button>Ver más</button>
+                    {!info.presentacion && <button>Presentacion no disponible</button>}
+                    {info.presentacion && <a href={`${info.presentacion}`} target="_blank" rel="noopener noreferrer">Ver presentación</a>}            
                 </div>
 
             </div>

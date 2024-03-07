@@ -59,7 +59,7 @@ function App() {
 
             <Home activo={botonActivo}/>
             <Portafolio activo={botonActivo}/>
-            <SobreMi activo={botonActivo}/>
+            <SobreMi activo={botonActivo} setActivo={setBotonActivo}/>
             <Servicios activo={botonActivo}/>
             <Referencias activo={botonActivo}/>
             

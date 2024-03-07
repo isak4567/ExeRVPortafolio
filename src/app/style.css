@@ -102,7 +102,6 @@ body {
 .Cont-Principal {
   width: 74.74%;
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
   overflow: scroll;
 }
@@ -130,6 +129,7 @@ body {
 .img-sujeto {
   height: 80vh;
   margin-top: 10%;
+  margin-left: 3%;
 }
 
 .sujeto {
@@ -196,7 +196,7 @@ body {
   line-height: normal;
   margin-bottom: 12px;
 }
-.trabajo .info-trabajo button {
+.trabajo .info-trabajo button, .trabajo .info-trabajo a {
   width: -moz-fit-content;
   width: fit-content;
   border: none;
@@ -209,6 +209,13 @@ body {
   box-shadow: 0px 6px 10px 0px rgba(252, 97, 94, 0.35);
   padding: 12px 16px;
   align-self: flex-end;
+  text-decoration: none;
+}
+.trabajo .info-trabajo button:active, .trabajo .info-trabajo a:active {
+  background-color: #FA2F4C;
+}
+.trabajo .info-trabajo button {
+  opacity: 0.6;
 }
 
 .trabajo-detalles {
@@ -320,8 +327,13 @@ body {
   margin: 0 16px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   border-radius: 8px 8px 0 0;
+}
+.exp-navCont .exp-nav img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 12px;
 }
 .exp-navCont .activo {
   background-color: rgba(227, 219, 29, 0.2);
@@ -330,6 +342,12 @@ body {
   -webkit-backdrop-filter: blur(7.5px);
           backdrop-filter: blur(7.5px);
   z-index: 5;
+  align-items: center;
+  transition: none;
+}
+.exp-navCont .activo img {
+  width: initial;
+  height: initial;
 }
 .exp-navCont .activo::before {
   content: "";
@@ -340,7 +358,7 @@ body {
   border: 2px solid #E3DB1D;
   border-left: none;
   border-top: none;
-  margin-left: -134px;
+  margin-left: -163%;
   margin-bottom: -38px;
   z-index: 1;
 }
@@ -353,7 +371,7 @@ body {
   border: 2px solid #E3DB1D;
   border-right: none;
   border-top: none;
-  margin-right: -134px;
+  margin-right: -163%;
   margin-bottom: -38px;
   z-index: 1;
 }
@@ -394,7 +412,6 @@ body {
 .experiencia-top .exp-titulo h2 {
   width: -moz-fit-content;
   width: fit-content;
-  min-width: 230px;
   font-weight: 400;
 }
 .experiencia-top .exp-puesto {
@@ -719,7 +736,7 @@ body {
 .Valores .valores-list .valores-cont {
   display: flex;
   flex-direction: column;
-  height: 60vh;
+  height: 55vh;
   width: 30%;
   border-radius: 8px;
   border: 2px solid var(--color-4, #E3DB1D);
@@ -742,7 +759,7 @@ body {
   font-weight: 400;
   line-height: normal;
   margin-bottom: 4px;
-  margin: 12px 0 32px 0;
+  margin: 12px 0 20px 0;
   padding: 0 20px;
 }
 .Valores .valores-list .valores-cont .v-tittle {
@@ -915,7 +932,7 @@ form .formulario-espacios .form-submit {
   width: 70%;
   margin-right: 32px;
 }
-.callToAction button {
+.callToAction a, .callToAction button {
   border: none;
   font-size: 32px;
   font-style: normal;
@@ -925,7 +942,11 @@ form .formulario-espacios .form-submit {
   background: var(--color-1, #09143C);
   box-shadow: 0px 4px 15px 0px rgba(252, 97, 94, 0.35);
   padding: 8px;
+  text-decoration: none;
   cursor: pointer;
+}
+.callToAction a:active, .callToAction button:active {
+  background-color: #FA2F4C;
 }
 
 /* ############# Clases Comunes ############# */
@@ -959,5 +980,120 @@ form .formulario-espacios .form-submit {
   }
   100% {
     transform: translateY(0%);
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1300px) {
+  /* ############# Navegador ############# */
+  .Foto-Perfil {
+    width: 48%;
+    margin-bottom: 24px;
+  }
+  .Nav-Botones {
+    padding: 10px 16px;
+  }
+  .Nav-Botones button {
+    font-size: 28px;
+  }
+  .Nav-Botones img {
+    margin-right: 12px;
+  }
+  .Links p {
+    margin-bottom: 0px;
+  }
+  /* ############# Contenido Principal - Portafolio ############# */
+  .trabajo .info-trabajo h2 {
+    margin-bottom: 14px;
+  }
+  /* ============== SobreMi - Experiencia ============== */
+  .Experiencia {
+    padding: 24px 24px 24px 3%;
+  }
+  .exp-navCont .exp-nav {
+    margin: 0 4px;
+  }
+  .exp-navCont .activo img {
+    width: 46px;
+    height: 46px;
+  }
+  .experiencia-top .exp-titulo h2 {
+    font-size: 24px;
+    min-width: initial;
+  }
+  .experiencia-top .exp-fecha {
+    max-width: 220px;
+    padding: 0 10px 0 40px;
+  }
+  .expSub-cont {
+    padding-left: 1%;
+  }
+  .expSub-cont .expSub-col-2 .expSub-list {
+    width: 94%;
+    gap: 10px;
+  }
+  .expSub-cont .expSub-col-3 .expSub-list {
+    padding: 16px 12px 0px 28px;
+    padding-right: 0;
+  }
+  /* ============== SobreMi - Habilidad ============== */
+  .Habilidades .col2 .h-cont {
+    width: 80%;
+  }
+  /* ============== SobreMi - Valóres ============== */
+  .Valores .valores-list .valores-cont p {
+    margin: 12px 0 10px 0;
+  }
+  /* ############# Contenido Principal - Servicios ############# */
+  .servicios {
+    padding: 46px 24px 46px 14px;
+  }
+  .servicios-list .servicio-cont p {
+    margin: 12px 0 16px 0;
+  }
+}
+@media only screen and (max-height: 740px) {
+  .lista-trabajos {
+    margin-bottom: 2%;
+  }
+  /* ============== SobreMi - Experiencia ============== */
+  .experiencia-info {
+    height: 87%;
+  }
+  .experiencia-top div {
+    height: 46px;
+  }
+  .experiencia-descr {
+    padding: 12px 20px;
+  }
+  .expSub-cont {
+    height: 37vh;
+  }
+  /* ============== SobreMi - Valóres ============== */
+  .Valores {
+    padding-bottom: 26px;
+  }
+  .Valores .valores-list {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .Valores .valores-list .valores-cont {
+    margin-bottom: 12px;
+    height: 61vh;
+  }
+  .Valores .valores-list .valores-cont p {
+    margin: 8px 0 2px 0;
+  }
+  /* ############# Contenido Principal - Servicios ############# */
+  .servicios {
+    padding: 36px 24px 36px 14px;
+  }
+  .servicios-list .servicio-cont {
+    margin-bottom: 12px;
+    height: 65vh;
+  }
+  .servicios-list .servicio-cont ul li {
+    margin-bottom: 0;
+  }
+  .referecias {
+    padding: 5% 10% 0 10%;
   }
 }/*# sourceMappingURL=style.css.map */

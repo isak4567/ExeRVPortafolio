@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Experiencia, Habilidad, Educacion, Valores } from "../../components";
 import { FaChalkboardTeacher, FaStar, FaBook, FaBookmark } from "react-icons/fa";
 
-function SobreMi({activo}) {
+function SobreMi({activo, setActivo}) {
 
     const [botonActivo2, setBotonActivo2] = useState(1);
 
@@ -43,7 +43,7 @@ function SobreMi({activo}) {
                 <Experiencia activo={botonActivo2}/>
                 <Habilidad activo={botonActivo2} />
                 <Educacion activo={botonActivo2} />
-                <Valores activo={botonActivo2} />
+                <Valores activo={botonActivo2} setActivo={setActivo} />
             </div>
 
         </div>

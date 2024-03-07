@@ -19,6 +19,7 @@ function Portafolio({activo}) {
                 require("../../assets/img/programasYEst/premier-pro.png"),
             ],
             portada: require("../../assets/img/portafolio/HxN-B.png"),
+            presentacion: "",
         },
         {
             titulo: "YGG",
@@ -32,6 +33,7 @@ function Portafolio({activo}) {
                 require("../../assets/img/programasYEst/ilustrador-adobe.png"),
             ],
             portada: require("../../assets/img/portafolio/YGG-B.png"),
+            presentacion: "https://www.behance.net/gallery/157749319/Social-Media-for-the-metaverse",
         },
         {
             titulo: "PRO-grama",
@@ -46,6 +48,7 @@ function Portafolio({activo}) {
                 require("../../assets/img/programasYEst/premier-pro.png"),
             ],
             portada: require("../../assets/img/portafolio/PRO-B.png"),
+            presentacion: "https://www.behance.net/gallery/179332465/PROgrama",
         },
         {
             titulo: "INDEMNIZAR",
@@ -60,6 +63,7 @@ function Portafolio({activo}) {
                 require("../../assets/img/programasYEst/adobe-lightroom.png"),
                 require("../../assets/img/programasYEst/premier-pro.png"),
             ],
+            presentacion: "",
             portada: require("../../assets/img/portafolio/INDEMNIZAR-B.png"),
         },
         {
@@ -74,6 +78,7 @@ function Portafolio({activo}) {
                 require("../../assets/img/programasYEst/adobe-lightroom.png"),
                 require("../../assets/img/programasYEst/premier-pro.png"),
             ],
+            presentacion: "",
             portada: require("../../assets/img/portafolio/EMD-B.png"),
         },
         {
@@ -88,6 +93,7 @@ function Portafolio({activo}) {
                 require("../../assets/img/programasYEst/ilustrador-adobe.png"),
                 require("../../assets/img/programasYEst/premier-pro.png"),
             ],
+            presentacion: "",
             portada: require("../../assets/img/portafolio/ALA-B.png"),
         },
         {
@@ -99,6 +105,7 @@ function Portafolio({activo}) {
             tecnologias: [
                 require("../../assets/img/programasYEst/figma.png"),
             ],
+            presentacion: "",
             portada: require("../../assets/img/portafolio/SMS-B.png"),
         },
         {
@@ -111,6 +118,7 @@ function Portafolio({activo}) {
                 require("../../assets/img/programasYEst/figma.png"),
                 require("../../assets/img/programasYEst/premier-pro.png"),
             ],
+            presentacion: "",
             portada: require("../../assets/img/portafolio/VALEN-B.png"),
         },
         {
@@ -123,6 +131,7 @@ function Portafolio({activo}) {
                 require("../../assets/img/programasYEst/figma.png"),
                 require("../../assets/img/programasYEst/adobe-photoshop.png"),
             ],
+            presentacion: "https://www.behance.net/gallery/163154879/Hecho-para-2-(-APP-web)",
             portada: require("../../assets/img/portafolio/HP2-B.png"),
         },
         {
@@ -138,6 +147,7 @@ function Portafolio({activo}) {
                 require("../../assets/img/programasYEst/adobe-lightroom.png"),
 
             ],
+            presentacion: "https://www.behance.net/gallery/148706463/rediseno-UXUI",
             portada: require("../../assets/img/portafolio/Crossfy-B.png"),
         },
         {
@@ -151,6 +161,7 @@ function Portafolio({activo}) {
                 require("../../assets/img/programasYEst/adobe-photoshop.png"),
                 require("../../assets/img/programasYEst//ilustrador-adobe.png"),
             ],
+            presentacion: "https://www.behance.net/gallery/135660083/Proyecto-final-Robles-Vega-Coder-house-2022",
             portada: require("../../assets/img/portafolio/APOYO-B.png"),
         },
     ]

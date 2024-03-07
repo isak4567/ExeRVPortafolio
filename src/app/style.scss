@@ -108,7 +108,6 @@ body {
 .Cont-Principal {
     width: 74.74%;
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     overflow: scroll;
 
@@ -137,6 +136,7 @@ body {
 .img-sujeto {
     height: 80vh;
     margin-top: 10%;
+    margin-left: 3%;
 }
 
 .sujeto {
@@ -203,7 +203,7 @@ body {
             line-height: normal;
             margin-bottom: 12px;
         }
-        button {
+        button, a {
             width: fit-content;
             border: none;
             font-size: 32px;
@@ -215,7 +215,13 @@ body {
             box-shadow: 0px 6px 10px 0px rgba(252, 97, 94, 0.35);
             padding: 12px 16px;
             align-self: flex-end;
-            
+            text-decoration: none;
+            &:active {
+                background-color: $Color3;
+            }
+        }
+        button {
+            opacity: 0.6;
         }
     }
 }
@@ -243,6 +249,7 @@ body {
         height: 24px;
     }
 }
+
 /* ############# Contenido Principal - SobreMi ############# */
 .SobreMi {
     width: 100%;
@@ -325,8 +332,13 @@ body {
         margin: 0 16px;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
         border-radius: 8px 8px 0 0;
+        img {
+            width: 24px;
+            height: 24px;
+            margin-bottom: 12px;
+        }
     }
 
     .activo {
@@ -335,6 +347,13 @@ body {
         border-bottom: none;
         backdrop-filter: blur(7.5px);
         z-index: 5;
+        align-items: center;
+        transition: none;
+
+        img {
+            width: initial;
+            height: initial;
+        }
         &::before {
             content: '';
             width: 50px;
@@ -344,7 +363,7 @@ body {
             border: 2px solid $Color4;
             border-left: none;
             border-top: none;
-            margin-left: -134px;
+            margin-left: -163%;
             margin-bottom: -38px;
             z-index: 1;
         }
@@ -358,7 +377,7 @@ body {
             border: 2px solid $Color4;
             border-right: none;
             border-top: none;
-            margin-right: -134px;
+            margin-right: -163%;
             margin-bottom: -38px;
             z-index: 1;
         }
@@ -399,7 +418,7 @@ body {
         padding-right: 40px;
         h2 {
             width: fit-content;
-            min-width: 230px;
+
             font-weight: 400;
         }
     }
@@ -739,7 +758,7 @@ body {
         .valores-cont {
             display: flex;
             flex-direction: column;
-            height: 60vh;
+            height: 55vh;
             width: 30%;
             border-radius: 8px;
             border: 2px solid var(--color-4, #E3DB1D);
@@ -760,7 +779,7 @@ body {
                 font-weight: 400;
                 line-height: normal;
                 margin-bottom: 4px;
-                margin: 12px 0 32px 0;
+                margin: 12px 0 20px 0;
                 padding: 0 20px;
             }
             .v-tittle {
@@ -935,7 +954,7 @@ form {
         width: 70%;
         margin-right: 32px;
     }
-    button {
+    a, button {
         border: none;
         font-size: 32px;
         font-style: normal;
@@ -945,7 +964,11 @@ form {
         background: var(--color-1, #09143C);
         box-shadow: 0px 4px 15px 0px rgba(252, 97, 94, 0.35);
         padding: 8px;
+        text-decoration: none;
         cursor: pointer;
+        &:active {
+            background-color: $Color3;
+        }
         
     }
 }
@@ -984,4 +1007,136 @@ form {
     100% {
         transform: translateY(0%);
     }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1300px) {
+/* ############# Navegador ############# */
+    .Foto-Perfil {
+        width: 48%;
+        margin-bottom: 24px;
+    }
+
+    .Nav-Botones {
+        padding: 10px 16px;
+        button {font-size: 28px;}
+        img { margin-right: 12px;}
+    }
+
+    .Links p {
+        margin-bottom: 0px;
+    }
+
+/* ############# Contenido Principal - Portafolio ############# */
+    .trabajo .info-trabajo h2 {
+        margin-bottom: 14px;
+    }
+
+/* ============== SobreMi - Experiencia ============== */
+    .Experiencia {
+        padding: 24px 24px 24px 3%;
+    }
+
+    .exp-navCont {
+        .exp-nav {
+            margin: 0 4px;
+        }
+        .activo img {
+            width: 46px;
+            height: 46px;
+        }
+    }
+
+    .experiencia-top {
+        .exp-titulo h2 {
+                font-size: 24px;
+                min-width: initial;
+            }
+        .exp-fecha {
+            max-width: 220px;
+            padding: 0 10px 0 40px;
+        }
+    }
+
+    .expSub-cont {
+        padding-left: 1%;
+        .expSub-col-2 .expSub-list {
+            width: 94%;
+            gap: 10px;
+        }
+        .expSub-col-3 .expSub-list {
+            padding: 16px 12px 0px 28px;
+            padding-right: 0;  
+        }
+    }
+
+/* ============== SobreMi - Habilidad ============== */
+    .Habilidades .col2 .h-cont {
+        width: 80%;
+    }
+
+/* ============== SobreMi - Valóres ============== */
+    .Valores .valores-list .valores-cont p {
+        margin: 12px 0 10px 0;
+    }
+ 
+/* ############# Contenido Principal - Servicios ############# */
+    .servicios {
+        padding: 46px 24px 46px 14px;
+    }    
+
+    .servicios-list .servicio-cont p {
+        margin: 12px 0 16px 0;
+    }
+}
+
+@media only screen and (max-height: 740px) {
+    .lista-trabajos {
+        margin-bottom: 2%;
+    }
+
+    /* ============== SobreMi - Experiencia ============== */
+    .experiencia-info {
+        height: 87%;
+    }
+
+    .experiencia-top div {
+        height: 46px;
+    }
+
+    .experiencia-descr {
+        padding: 12px 20px;
+    }
+
+    .expSub-cont {
+        height: 37vh;
+    }
+
+    /* ============== SobreMi - Valóres ============== */
+    .Valores {
+        padding-bottom: 26px;
+        .valores-list {
+            height: fit-content;
+            .valores-cont {
+                margin-bottom: 12px;
+                height: 61vh;
+                p {margin: 8px 0 2px 0;}
+            }
+        }
+    }
+
+    /* ############# Contenido Principal - Servicios ############# */
+    .servicios {
+        padding: 36px 24px 36px 14px;
+    }  
+
+    .servicios-list .servicio-cont {
+        margin-bottom: 12px;
+        height: 65vh;
+        ul li {margin-bottom: 0;}
+    }
+
+    .referecias {
+        padding: 5% 10% 0 10%;
+    }
+
 }

@@ -78,7 +78,7 @@ function Servicios({activo}) {
 
             <div className="callToAction">
                 <p>Si necesitas guia sobre tu proyecto, producto o equipo, no dudes en comunicarte conmigo. Hacer el esfuerzo para que empecemos a hablar ya es un gran comienzo.</p>
-                <button>Link a linked in</button>
+                <a href="https://www.linkedin.com/in/exequiel-robles-vega-b9432b211/" target="_blank">Link a linked in</a>
             </div>
         </div>
     );

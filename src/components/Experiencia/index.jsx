@@ -83,7 +83,9 @@ function Experiencia({activo}) {
                 "Realicé pruebas A/B para el sitio web de la empresa, aumentando el puntaje de usabilidad de la versión anterior del sitio en un 78%.",
             ],
             aprendi: [
-                "Desarrollar",
+                "Como trabajar con un equipo internacional en inlges.",
+                "A Demostrar la valia de la investigación para cumplir las metas del producto.",
+                "A cambiar de rol por el puesto más indispensable a ocupar."
             ],
             programas: [
                 require("../../assets/img/programasYEst/figma.png"),
@@ -114,7 +116,9 @@ function Experiencia({activo}) {
                 "Diseñe la presentación del producto para el stakeholder para mostrar los resultados positivos.",
             ],
             aprendi: [
-                "Desarrollar",
+                "A Demostrar la importancia de los estudios UX.",
+                "Mejore mi ojo critico con base a objetivos y diseño.",
+                "A Comunicar ideas y experiencias.",
             ],
             programas: [
                 require("../../assets/img/programasYEst/figma.png"),
@@ -141,7 +145,9 @@ function Experiencia({activo}) {
                 "Diseñe la presentación del producto para el stakeholder para mostrar los resultados positivos.",
             ],
             aprendi: [
-                "Desarrollar",
+                "A trabajar con equipos altamente dinamicos y de muchas personas.",
+                "A priorizar un MVP amoldable a las necesidades.",
+                "A Trabajar en mis habilidades creando Story telling."
             ],
             programas: [
                 require("../../assets/img/programasYEst/figma.png"),
@@ -174,7 +180,9 @@ function Experiencia({activo}) {
                 "Creación de guías de estilo graficá, para mantener una marca consistente en todos los productos.",
             ],
             aprendi: [
-                "Desarrollar",
+                "A optimizar mis tiempos.",
+                "A Crear equipos de proyecto con habilidades especificas.",
+                "A amoldar el diseño con respecto a las necesidades del Stakeholder."
             ],
             programas: [
                 require("../../assets/img/programasYEst/figma.png"),

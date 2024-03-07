@@ -2,7 +2,7 @@
 
 
 
-function Valores({activo}) {
+function Valores({activo, setActivo}) {
   
     
     return (
@@ -35,8 +35,8 @@ function Valores({activo}) {
             </div>
 
             <div className="callToAction">
-                <p>Si necesitas guia sobre tu proyecto, producto o equipo, no dudes en comunicarte conmigo. Hacer el esfuerzo para que empecemos a hablar ya es un gran comienzo.</p>
-                <button>Link a linked in</button>
+                <p>Si te apasiona  el Diseño UX/UI  o tienes un projecto en mente, te invito a que Conozcas mis servicios.</p>
+                <button onClick={()=>setActivo(3)} >Conocer servicios</button>
             </div>
 
         </div>
