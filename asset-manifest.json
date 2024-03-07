@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ExeRVPortafolio/static/css/main.8836c051.css",
-    "main.js": "/ExeRVPortafolio/static/js/main.e9d18b29.js",
+    "main.css": "/ExeRVPortafolio/static/css/main.d6682a4b.css",
+    "main.js": "/ExeRVPortafolio/static/js/main.9d4e990a.js",
     "static/media/backgroundImage.png": "/ExeRVPortafolio/static/media/backgroundImage.d9449eb18aa1247dada0.png",
     "static/media/perfil2.png": "/ExeRVPortafolio/static/media/perfil2.63c829852fcdb0a5fa9a.png",
     "static/media/HxN-B.png": "/ExeRVPortafolio/static/media/HxN-B.2b6520658abeac0661f8.png",
@@ -29,11 +29,11 @@
     "static/media/mini-yo-7.png": "/ExeRVPortafolio/static/media/mini-yo-7.e21afcae177c356f4f25.png",
     "static/media/mini-yo-3.png": "/ExeRVPortafolio/static/media/mini-yo-3.aca3fc10e0c010287443.png",
     "index.html": "/ExeRVPortafolio/index.html",
-    "main.8836c051.css.map": "/ExeRVPortafolio/static/css/main.8836c051.css.map",
-    "main.e9d18b29.js.map": "/ExeRVPortafolio/static/js/main.e9d18b29.js.map"
+    "main.d6682a4b.css.map": "/ExeRVPortafolio/static/css/main.d6682a4b.css.map",
+    "main.9d4e990a.js.map": "/ExeRVPortafolio/static/js/main.9d4e990a.js.map"
   },
   "entrypoints": [
-    "static/css/main.8836c051.css",
-    "static/js/main.e9d18b29.js"
+    "static/css/main.d6682a4b.css",
+    "static/js/main.9d4e990a.js"
   ]
 }
