@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/ExeRVPortafolio/static/css/main.7b782de1.css",
-    "main.js": "/ExeRVPortafolio/static/js/main.91f967db.js",
+    "main.css": "/ExeRVPortafolio/static/css/main.f029f617.css",
+    "main.js": "/ExeRVPortafolio/static/js/main.c3cb4b8b.js",
     "static/media/backgroundImage.png": "/ExeRVPortafolio/static/media/backgroundImage.d9449eb18aa1247dada0.png",
-    "static/media/perfil2.png": "/ExeRVPortafolio/static/media/perfil2.63c829852fcdb0a5fa9a.png",
     "static/media/nube_suave_atras.png": "/ExeRVPortafolio/static/media/nube_suave_atras.02724ee7b5cfa943d43e.png",
     "static/media/nube_izquierda.png": "/ExeRVPortafolio/static/media/nube_izquierda.84467afeab29f9a3c9e5.png",
+    "static/media/perfil.png": "/ExeRVPortafolio/static/media/perfil.c2c336dc5609d0a3aede.png",
     "static/media/nuve_derecha.png": "/ExeRVPortafolio/static/media/nuve_derecha.67fdb4d03c066a7466cd.png",
     "static/media/nube_suave_adelante.png": "/ExeRVPortafolio/static/media/nube_suave_adelante.211f81098f6cf1349082.png",
     "static/media/nube_suave_adelante_2.png": "/ExeRVPortafolio/static/media/nube_suave_adelante_2.9db8cb7248e6143d3a8b.png",
@@ -23,24 +23,26 @@
     "static/media/SMS-B.png": "/ExeRVPortafolio/static/media/SMS-B.f78cab629bba54dc80e8.png",
     "static/media/augusto.png": "/ExeRVPortafolio/static/media/augusto.8c0b25822b5a3fc1ea07.png",
     "static/media/samir.png": "/ExeRVPortafolio/static/media/samir.63c406fa84ce56bf6fbb.png",
-    "static/media/perfil.png": "/ExeRVPortafolio/static/media/perfil.77cc6b34a80032424789.png",
     "static/media/alpaca.png": "/ExeRVPortafolio/static/media/alpaca.c8de0f0ed1282b152c14.png",
     "static/media/INDEMNIZAR-B.png": "/ExeRVPortafolio/static/media/INDEMNIZAR-B.a67f0c7938644c8b5eab.png",
     "static/media/denu.png": "/ExeRVPortafolio/static/media/denu.f4c529456d57afa521ce.png",
     "static/media/neme.png": "/ExeRVPortafolio/static/media/neme.1e3f7e4f0a841767999b.png",
+    "static/media/yo-portada.png": "/ExeRVPortafolio/static/media/yo-portada.3210bd3c4c6e73554ed4.png",
     "static/media/ALA-B.png": "/ExeRVPortafolio/static/media/ALA-B.63dd7494b360275e6994.png",
+    "static/media/Titulo.png": "/ExeRVPortafolio/static/media/Titulo.b742a0d12dc6e682d2a3.png",
     "static/media/mini-yo-2.png": "/ExeRVPortafolio/static/media/mini-yo-2.de0217f5074d58556c84.png",
     "static/media/mini-yo-1.png": "/ExeRVPortafolio/static/media/mini-yo-1.ced3574db98150aa8e22.png",
     "static/media/mini-yo-6.png": "/ExeRVPortafolio/static/media/mini-yo-6.4839e1923d29f8d2145c.png",
     "static/media/mini-yo-5.png": "/ExeRVPortafolio/static/media/mini-yo-5.41668f32194c6b053ded.png",
     "static/media/mini-yo-7.png": "/ExeRVPortafolio/static/media/mini-yo-7.e21afcae177c356f4f25.png",
     "static/media/mini-yo-3.png": "/ExeRVPortafolio/static/media/mini-yo-3.aca3fc10e0c010287443.png",
+    "static/media/Titulo2.png": "/ExeRVPortafolio/static/media/Titulo2.4becfcd9fecb30e29ce9.png",
     "index.html": "/ExeRVPortafolio/index.html",
-    "main.7b782de1.css.map": "/ExeRVPortafolio/static/css/main.7b782de1.css.map",
-    "main.91f967db.js.map": "/ExeRVPortafolio/static/js/main.91f967db.js.map"
+    "main.f029f617.css.map": "/ExeRVPortafolio/static/css/main.f029f617.css.map",
+    "main.c3cb4b8b.js.map": "/ExeRVPortafolio/static/js/main.c3cb4b8b.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b782de1.css",
-    "static/js/main.91f967db.js"
+    "static/css/main.f029f617.css",
+    "static/js/main.c3cb4b8b.js"
   ]
 }
