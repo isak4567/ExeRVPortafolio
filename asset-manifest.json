@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/ExeRVPortafolio/static/css/main.3f0f3ee7.css",
-    "main.js": "/ExeRVPortafolio/static/js/main.2f95e1f3.js",
+    "main.js": "/ExeRVPortafolio/static/js/main.01e5a88c.js",
     "static/media/backgroundImage.png": "/ExeRVPortafolio/static/media/backgroundImage.d9449eb18aa1247dada0.png",
     "static/media/nube_suave_atras.png": "/ExeRVPortafolio/static/media/nube_suave_atras.02724ee7b5cfa943d43e.png",
     "static/media/nube_izquierda.png": "/ExeRVPortafolio/static/media/nube_izquierda.84467afeab29f9a3c9e5.png",
-    "static/media/perfil.png": "/ExeRVPortafolio/static/media/perfil.c2c336dc5609d0a3aede.png",
     "static/media/nuve_derecha.png": "/ExeRVPortafolio/static/media/nuve_derecha.67fdb4d03c066a7466cd.png",
+    "static/media/perfil.png": "/ExeRVPortafolio/static/media/perfil.a59e1b5f38afa2400cab.png",
     "static/media/nube_suave_adelante.png": "/ExeRVPortafolio/static/media/nube_suave_adelante.211f81098f6cf1349082.png",
     "static/media/nube_suave_adelante_2.png": "/ExeRVPortafolio/static/media/nube_suave_adelante_2.9db8cb7248e6143d3a8b.png",
     "static/media/HxN-B.png": "/ExeRVPortafolio/static/media/HxN-B.2b6520658abeac0661f8.png",
@@ -39,10 +39,10 @@
     "static/media/Titulo2.png": "/ExeRVPortafolio/static/media/Titulo2.4becfcd9fecb30e29ce9.png",
     "index.html": "/ExeRVPortafolio/index.html",
     "main.3f0f3ee7.css.map": "/ExeRVPortafolio/static/css/main.3f0f3ee7.css.map",
-    "main.2f95e1f3.js.map": "/ExeRVPortafolio/static/js/main.2f95e1f3.js.map"
+    "main.01e5a88c.js.map": "/ExeRVPortafolio/static/js/main.01e5a88c.js.map"
   },
   "entrypoints": [
     "static/css/main.3f0f3ee7.css",
-    "static/js/main.2f95e1f3.js"
+    "static/js/main.01e5a88c.js"
   ]
 }
