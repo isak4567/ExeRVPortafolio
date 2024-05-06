@@ -34,7 +34,7 @@ function Servicios({activo}) {
         <div className={`servicios ${activo !== 3 && "displayNone"}`}>
             <div className="servicios-list">
                 <div className="servicio-cont">
-                    <img src={require("../../assets/img/mini-yo-4.png")} alt="" />
+                    <img src={require("../../assets/img/mini-yo-3.png")} alt="" />
 
                     <p>UX Research</p>
 
@@ -44,7 +44,7 @@ function Servicios({activo}) {
                 </div>
 
                 <div className="servicio-cont">
-                    <img src={require("../../assets/img/mini-yo-3.png")} alt="" />
+                    <img src={require("../../assets/img/mini-yo-4.png")} alt="" />
 
                     <p>Diseñar Interfaz (UI)</p>
 

@@ -207,6 +207,7 @@ body {
 .Main {
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 
 .App {
@@ -241,10 +242,14 @@ body {
 }
 
 .Foto-Perfil-img {
-    background-image: url('../assets/img/carga/tipito.png');
-    background-size: 90% auto;
-    background-position: center top;
+    background-image: url('../assets/img/yo-portada.png');
+    background-size: 130% auto;
+    background-position: 40% top;
     background-repeat: no-repeat;
+    cursor: pointer;
+    &:hover {
+    background-size: 150% auto;
+    }
 }
 
 .Cont-Nav {
@@ -285,7 +290,19 @@ body {
     p {
         margin-bottom: 4px;
         svg {margin-right: 8px;}
+        a {
+            font-size: 16px;
+            text-decoration: none;
+            color: $Color2;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
+}
+
+.titulo {
+    clip-path: polygon(11% 0, 0 0, 0 100%, 8% 100%);
 }
 
 /* ############# Contenido Principal - Home ############# */
@@ -318,13 +335,35 @@ body {
 }
 
 .img-sujeto {
-    height: 80vh;
-    margin-top: 10%;
-    margin-left: 3%;
+    height: 90vh;
+    margin-top: 9%;
+    margin-left: 0%;
+    transform: translateX(-130%);
+    animation: leftCenter 0.5s 1 0.1s forwards;
 }
 
 .sujeto {
     margin-top: 6%;
+    h1, h2 {opacity: 0;}
+    .img-sujeto-desc {
+        position: absolute;
+        margin-left: -40%;
+        z-index: -1;
+        top: 30%;
+        img {
+            width: 78vw;
+            clip-path: polygon(0 100%, 0 100%, 100% 100%, 0 100%, 0 0);
+            animation: corte 0.5s 1 0.5s forwards;
+        }
+        .titulo2-sujeto {
+            margin-top: -30%;
+        }
+    }
+}
+ 
+@keyframes corte {
+    0% {clip-path: polygon(0 100%, 0 100%, 100% 100%, 0 100%, 0 0);;}
+    100% {clip-path: polygon(100% 0, 100% 49%, 100% 100%, 0 100%, 0 0);}
 }
 
 /* ############# Contenido Principal - Portafolio ############# */
@@ -348,6 +387,9 @@ body {
         justify-content: center;
         align-items: center;
         background-color: $Color1;
+        &:hover {
+            box-shadow: inset 0px 0px 0px 2px #fa2f4d85, 0px 0px 10px 0px #fa2f4d85;
+        }
     }
     .active-trab {
         background-color: $Color3;
@@ -442,7 +484,6 @@ body {
     width: 100%;
     display: flex;
     animation: upDown 0.3s 1 forwards;
-
 }
 
 .SobreMi-nav {
@@ -1223,6 +1264,15 @@ form {
     }
 }
 
+@keyframes leftCenter {
+    0% {
+        transform: translateX(-130%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
 @keyframes upDown {
     0% {
         transform: translateY(-100%);
@@ -1242,6 +1292,12 @@ form {
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1300px) {
+
+    .img-sujeto {
+        height: 82vh;
+        margin-top: 15%;
+        margin-left: -1%;
+    }
 /* ############# Navegador ############# */
     .Foto-Perfil {
         width: 48%;
@@ -1321,7 +1377,7 @@ form {
     }
 }
 
-@media only screen and (max-height: 740px) {
+@media only screen and (min-width: 1000px) and (max-width: 1300px) and (max-height: 740px) {
     .lista-trabajos {
         margin-bottom: 2%;
     }
@@ -1370,5 +1426,121 @@ form {
     .referecias {
         padding: 5% 10% 0 10%;
     }
+
+} 
+
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+/* ############# App ############# */
+
+.App {
+    flex-direction: column;
+}
+
+.header-movil {
+    height: 60px;
+    width: 100%;
+    padding: 18px 24px;
+    background-color: $Color1;
+    
+    svg {
+        font-size: 28px;
+        transition: 0.3s all;
+    }
+
+    .activo { color: $Color3;}
+}
+
+.main-movil {
+    display: flex;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.footer-movil {
+    width: 100%;
+    padding: 12px 0 16px 0;
+    background-color: $Color1;
+}
+
+/* ############# Navegador ############# */
+.Navegador {
+    width: 306px;
+    transition: 0.3s all;
+    margin-left: 0;
+}
+
+.navMove {
+    margin-left: -306px;
+}
+
+.Foto-Perfil {
+    width: 182px;
+    height: 182px;
+}
+
+.Cont-Nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    .activo { background-color: $Color3;}
+}
+
+.Links p{
+    margin: 0;
+}
+/* ############# Contenido Principal - Portafolio ############# */
+.Cont-Principal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.home {
+    width: 100%;
+    padding-top: 160px;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.img-sujeto {
+    height: 513px;
+    margin: 0;
+    transform: translateX(-100%);
+    animation: leftCenter 0.5s 1 0.1s forwards;
+}
+
+.sujeto {
+    margin-top: 0%;
+    h1, h2 {
+        opacity: 0;
+        margin: 0;
+    }
+    .img-sujeto-desc {
+        position: absolute;
+        right: 0;
+        margin: 0;
+        margin-top: -20%;
+        img {
+            width: 100vw;
+        }
+        .titulo1-sujeto {
+            margin-bottom: -12px;
+        }
+    }
+}
+/* ============== SobreMi - Experiencia ============== */
+
+
+/* ============== SobreMi - Habilidad ============== */
+
+
+/* ============== SobreMi - Valóres ============== */
+
+ 
+/* ############# Contenido Principal - Servicios ############# */
 
 }
