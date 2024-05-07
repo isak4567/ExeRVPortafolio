@@ -438,7 +438,7 @@ body {
             color: $Color2;
             border-radius: 8px;
             background: var(--color-1, #09143C);
-            box-shadow: inset 0px 0px 0px 0px #fa2f4d85, 0px 6px 10px 0px rgba(252, 97, 94, 0.35);;
+            box-shadow: inset 0px 0px 0px 0px #fa2f4d85, 0px 6px 10px 0px rgba(252, 97, 94, 0.35);
             padding: 12px 16px;
             align-self: flex-end;
             text-decoration: none;
@@ -461,6 +461,7 @@ body {
     padding: 8px 12px 4px 12px;
     justify-content: space-between;
     border: 2px $Color4 solid;
+    backdrop-filter: blur(3px);
     border-radius: 16px;
     background-color: rgba(227, 219, 29, 0.2);
     p {
@@ -1431,7 +1432,6 @@ form {
 
 @media only screen and (min-width: 300px) and (max-width: 700px) {
 /* ############# App ############# */
-
 .App {
     flex-direction: column;
 }
@@ -1458,8 +1458,10 @@ form {
 
 .footer-movil {
     width: 100%;
-    padding: 12px 0 16px 0;
+    padding: 12px 0 40px 0;
     background-color: $Color1;
+    display: flex;
+    justify-content: center;
 }
 
 /* ############# Navegador ############# */
@@ -1476,6 +1478,7 @@ form {
 .Foto-Perfil {
     width: 182px;
     height: 182px;
+    margin-left: 15%;
 }
 
 .Cont-Nav {
@@ -1488,19 +1491,24 @@ form {
     .activo { background-color: $Color3;}
 }
 
-.Links p{
+.Links{ 
+    margin-left: 0;
+    p {
     margin: 0;
+    }
 }
-/* ############# Contenido Principal - Portafolio ############# */
+
+/* ############# Contenido Principal - Home ############# */
 .Cont-Principal {
     width: 100%;
-    display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    h2 {
+        width: fit-content;
+    }
 }
 
 .home {
-    width: 100%;
     padding-top: 160px;
     justify-content: flex-start;
     align-items: flex-end;
@@ -1510,17 +1518,14 @@ form {
     height: 513px;
     margin: 0;
     transform: translateX(-100%);
-    animation: leftCenter 0.5s 1 0.1s forwards;
 }
 
 .sujeto {
     margin-top: 0%;
     h1, h2 {
-        opacity: 0;
         margin: 0;
     }
     .img-sujeto-desc {
-        position: absolute;
         right: 0;
         margin: 0;
         margin-top: -20%;
@@ -1532,6 +1537,110 @@ form {
         }
     }
 }
+
+/* ############# Contenido Principal - Portafolio ############# */
+.Portafolio {
+    width: 100%;
+    padding: 24px;
+    height: fit-content;
+}
+
+.lista-trabajos {
+    padding: 24px;
+    padding-top: 36px;
+    position: fixed;
+    background-color: $Color1;
+    justify-content: space-between;
+    bottom: -250px;
+    gap: 18px 12px;
+    z-index: 1;
+    div {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 30px;
+    }
+
+    .nav-portafolio {
+        position: absolute;
+        width: 85px;
+        height: 12px;
+        margin-left: 34%;
+        margin-top: -5%;
+        background-color: $Color6;
+        border-radius: 6px;
+    }
+
+    .nav-portafolio-act {background-color: $Color3;}
+}
+
+.port-nav {
+    bottom: 0;
+    div {
+        margin-bottom: 0px;
+    }
+}
+
+.trabajo {
+    .trabajo-cont {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        .trabajo-img {
+            width: 330px;
+            margin-right: 0;
+            margin-bottom: 24px;
+            justify-content: center;
+        }
+    }
+    .info-trabajo {
+        width: 100%;
+        padding-bottom: 140px;
+        height: fit-content;
+        p{
+            width: 90%;
+        }
+        button, a {
+            justify-self: center;
+            padding: 8px 16px;
+        }
+        .trabajo-detalles-movil {
+            background-color: #E3DB1D33;
+            border: 2px $Color4 solid;
+            backdrop-filter: blur(3px);
+            opacity: 1;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            box-shadow: none;
+        }
+    }
+    .space-trabajo {
+        padding-bottom: 187px;
+    }
+}
+
+.trabajo-detalles {
+    flex-direction: column;
+    position: absolute;
+    backdrop-filter: blur(7px);
+    top: 360px;
+    div {
+        margin-bottom: 12px;
+    }
+    .trabajo-detalles-volver {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+            margin-right: 8px;
+            font-size: 20px;
+        }
+        p {font-size: 20px;}
+        &:hover, &:active {
+           svg, p {color: $Color4;}
+        }
+    }
+}
+
 /* ============== SobreMi - Experiencia ============== */
 
 
@@ -1544,3 +1653,18 @@ form {
 /* ############# Contenido Principal - Servicios ############# */
 
 }
+
+
+@media only screen and (min-width: 467px) and (max-width: 700px) {
+    .lista-trabajos {
+        bottom: -145px;
+    }
+
+    .port-nav {
+        bottom: 0;
+    }
+
+    .trabajo .space-trabajo {
+        padding-bottom: 227px;
+    }
+} 

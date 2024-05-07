@@ -450,6 +450,8 @@ body {
   padding: 8px 12px 4px 12px;
   justify-content: space-between;
   border: 2px #E3DB1D solid;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
   border-radius: 16px;
   background-color: rgba(227, 219, 29, 0.2);
 }
@@ -1403,8 +1405,10 @@ form .formulario-espacios .form-submit:hover {
   }
   .footer-movil {
     width: 100%;
-    padding: 12px 0 16px 0;
+    padding: 12px 0 40px 0;
     background-color: #09143C;
+    display: flex;
+    justify-content: center;
   }
   /* ############# Navegador ############# */
   .Navegador {
@@ -1418,6 +1422,7 @@ form .formulario-espacios .form-submit:hover {
   .Foto-Perfil {
     width: 182px;
     height: 182px;
+    margin-left: 15%;
   }
   .Cont-Nav {
     width: 100%;
@@ -1430,18 +1435,23 @@ form .formulario-espacios .form-submit:hover {
   .Cont-Nav .activo {
     background-color: #FA2F4C;
   }
+  .Links {
+    margin-left: 0;
+  }
   .Links p {
     margin: 0;
   }
-  /* ############# Contenido Principal - Portafolio ############# */
+  /* ############# Contenido Principal - Home ############# */
   .Cont-Principal {
     width: 100%;
-    display: flex;
     flex-direction: column;
     justify-content: flex-start;
   }
+  .Cont-Principal h2 {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
   .home {
-    width: 100%;
     padding-top: 160px;
     justify-content: flex-start;
     align-items: flex-end;
@@ -1450,17 +1460,14 @@ form .formulario-espacios .form-submit:hover {
     height: 513px;
     margin: 0;
     transform: translateX(-100%);
-    animation: leftCenter 0.5s 1 0.1s forwards;
   }
   .sujeto {
     margin-top: 0%;
   }
   .sujeto h1, .sujeto h2 {
-    opacity: 0;
     margin: 0;
   }
   .sujeto .img-sujeto-desc {
-    position: absolute;
     right: 0;
     margin: 0;
     margin-top: -20%;
@@ -1471,8 +1478,121 @@ form .formulario-espacios .form-submit:hover {
   .sujeto .img-sujeto-desc .titulo1-sujeto {
     margin-bottom: -12px;
   }
+  /* ############# Contenido Principal - Portafolio ############# */
+  .Portafolio {
+    width: 100%;
+    padding: 24px;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .lista-trabajos {
+    padding: 24px;
+    padding-top: 36px;
+    position: fixed;
+    background-color: #09143C;
+    justify-content: space-between;
+    bottom: -250px;
+    gap: 18px 12px;
+    z-index: 1;
+  }
+  .lista-trabajos div {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 30px;
+  }
+  .lista-trabajos .nav-portafolio {
+    position: absolute;
+    width: 85px;
+    height: 12px;
+    margin-left: 34%;
+    margin-top: -5%;
+    background-color: #D9D9D9;
+    border-radius: 6px;
+  }
+  .lista-trabajos .nav-portafolio-act {
+    background-color: #FA2F4C;
+  }
+  .port-nav {
+    bottom: 0;
+  }
+  .port-nav div {
+    margin-bottom: 0px;
+  }
+  .trabajo .trabajo-cont {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .trabajo .trabajo-cont .trabajo-img {
+    width: 330px;
+    margin-right: 0;
+    margin-bottom: 24px;
+    justify-content: center;
+  }
+  .trabajo .info-trabajo {
+    width: 100%;
+    padding-bottom: 140px;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .trabajo .info-trabajo p {
+    width: 90%;
+  }
+  .trabajo .info-trabajo button, .trabajo .info-trabajo a {
+    justify-self: center;
+    padding: 8px 16px;
+  }
+  .trabajo .info-trabajo .trabajo-detalles-movil {
+    background-color: rgba(227, 219, 29, 0.2);
+    border: 2px #E3DB1D solid;
+    -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(3px);
+    opacity: 1;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    box-shadow: none;
+  }
+  .trabajo .space-trabajo {
+    padding-bottom: 187px;
+  }
+  .trabajo-detalles {
+    flex-direction: column;
+    position: absolute;
+    -webkit-backdrop-filter: blur(7px);
+            backdrop-filter: blur(7px);
+    top: 360px;
+  }
+  .trabajo-detalles div {
+    margin-bottom: 12px;
+  }
+  .trabajo-detalles .trabajo-detalles-volver {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .trabajo-detalles .trabajo-detalles-volver svg {
+    margin-right: 8px;
+    font-size: 20px;
+  }
+  .trabajo-detalles .trabajo-detalles-volver p {
+    font-size: 20px;
+  }
+  .trabajo-detalles .trabajo-detalles-volver:hover svg, .trabajo-detalles .trabajo-detalles-volver:hover p, .trabajo-detalles .trabajo-detalles-volver:active svg, .trabajo-detalles .trabajo-detalles-volver:active p {
+    color: #E3DB1D;
+  }
   /* ============== SobreMi - Experiencia ============== */
   /* ============== SobreMi - Habilidad ============== */
   /* ============== SobreMi - Valóres ============== */
   /* ############# Contenido Principal - Servicios ############# */
+}
+@media only screen and (min-width: 467px) and (max-width: 700px) {
+  .lista-trabajos {
+    bottom: -145px;
+  }
+  .port-nav {
+    bottom: 0;
+  }
+  .trabajo .space-trabajo {
+    padding-bottom: 227px;
+  }
 }/*# sourceMappingURL=style.css.map */

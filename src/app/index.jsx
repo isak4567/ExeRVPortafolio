@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { FaPhoneAlt, FaLinkedinIn, FaBehance, FaEnvelope } from "react-icons/fa";
 import { LayoutPc, LayoutMovil } from "../components/Layout";
 import { Loading } from "../components";
 import './style.css';
@@ -12,7 +11,6 @@ function App() {
   useEffect(() => {
     if (window.innerWidth < 900) {
       setComputerView(false);
-      console.log(window.innerWidth);
     }
     
     setLoading("false");
