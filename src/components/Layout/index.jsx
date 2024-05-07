@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaPhoneAlt, FaLinkedinIn, FaBehance, FaEnvelope, FaBars } from "react-icons/fa";
 import { Home, Portafolio, PortafolioMovil, Referencias, Servicios, SobreMi } from '../../pages';
 
@@ -80,6 +80,9 @@ function LayoutMovil() {
     // ###### Portafolio
     const [actTrabajo, setActTrabajo] = useState(0);
     const [actNavPort, setActNavPort] = useState(false);
+    const [p, setp] = useState(null);
+
+    useEffect(()=> {setp(document.getElementById("gg"))}, [])
 
     const HandlerBoton2 = (seccion) => {
         setActTrabajo(seccion);
@@ -89,7 +92,7 @@ function LayoutMovil() {
     return (
         <div className="App">
 
-            <div className="header-movil">
+            <div className="header-movil" id="gg">
                 <FaBars className={`${nav == true && "activo"}`} onClick={()=>{setNav(!nav)}}/>
             </div>
 
@@ -153,57 +156,79 @@ function LayoutMovil() {
 
                     <div className={`${actTrabajo === 0 && "active-trab" }`} 
                     onClick={() => HandlerBoton2(0)}>
-                        <img src={require("../../assets/img/portafolio/HXN.png")} alt="" />
+                        <a href="#Portafolio">
+                            <img src={require("../../assets/img/portafolio/HXN.png")} alt="" />
+                        </a>
                     </div>
 
                     <div className={`${actTrabajo === 4 && "active-trab" }`} 
                     onClick={() => HandlerBoton2(4)}>
-                        <img src={require("../../assets/img/portafolio/emd.png")} alt="" />
+                        <a href="#Portafolio">
+                            <img src={require("../../assets/img/portafolio/emd.png")} alt="" />
+                        </a>
                     </div>
 
                     <div className={`${actTrabajo === 8 && "active-trab" }`} 
                     onClick={() => HandlerBoton2(8)}>
-                        <img src={require("../../assets/img/portafolio/hp2.png")} alt="" />
+                        <a href="#Portafolio">
+                            <img src={require("../../assets/img/portafolio/hp2.png")} alt="" />
+                        </a>
                     </div>
 
                     <div className={`${actTrabajo === 3 && "active-trab" }`} 
                     onClick={() => HandlerBoton2(3)}>
-                        <img src={require("../../assets/img/portafolio/indem.png")} alt="" />
+                        <a href="#Portafolio">
+                            <img src={require("../../assets/img/portafolio/indem.png")} alt="" />
+                        </a>
                     </div>
 
                     <div className={`${actTrabajo === 2 && "active-trab" }`} 
                     onClick={() => HandlerBoton2(2)}>
-                        <img src={require("../../assets/img/portafolio/pro.png")} alt="" />
+                        <a href="#Portafolio">
+                            <img src={require("../../assets/img/portafolio/pro.png")} alt="" />
+                        </a>
                     </div>
 
                     <div className={`${actTrabajo === 7 && "active-trab" }`} 
                     onClick={() => HandlerBoton2(7)}>
-                        <img src={require("../../assets/img/portafolio/smarth.png")} alt="" />
+                        <a href="#Portafolio">
+                            <img src={require("../../assets/img/portafolio/smarth.png")} alt="" />
+                        </a>
                     </div>
 
                     <div className={`${actTrabajo === 6 && "active-trab" }`} 
                     onClick={() => HandlerBoton2(6)}>
-                        <img src={require("../../assets/img/portafolio/Va.png")} alt="" />
+                        <a href="#Portafolio">
+                            <img src={require("../../assets/img/portafolio/Va.png")} alt="" />
+                        </a>
                     </div>
 
                     <div className={`${actTrabajo === 1 && "active-trab" }`} 
                     onClick={() => HandlerBoton2(1)}>
-                        <img src={require("../../assets/img/portafolio/ygg.png")} alt="" />
+                        <a href="#Portafolio">
+                            <img src={require("../../assets/img/portafolio/ygg.png")} alt="" />
+                        </a>
                     </div>
 
                     <div className={`${actTrabajo === 9 && "active-trab" }`} 
                     onClick={() => HandlerBoton2(9)}>
-                        <img src={require("../../assets/img/portafolio/cross.png")} alt="" />
+                        <a href="#Portafolio">
+                            <img src={require("../../assets/img/portafolio/cross.png")} alt="" />
+                        </a>
                     </div>
 
                     <div className={`${actTrabajo === 5 && "active-trab" }`} 
                     onClick={() => HandlerBoton2(5)}>
-                        <img src={require("../../assets/img/portafolio/A_la_orden.png")} alt="" />
+                        <a href="#Portafolio">
+                            <img src={require("../../assets/img/portafolio/A_la_orden.png")} alt="" />
+                        </a>
                     </div>
 
                     <div className={`${actTrabajo === 10 && "active-trab" }`} 
                     onClick={() => HandlerBoton2(10)}>
-                        <img src={require("../../assets/img/portafolio/Apoyo.png")} alt="" />
+                        <a href="#Portafolio">
+                            <img src={require("../../assets/img/portafolio/Apoyo.png")} alt="" />
+                        </a>
                     </div>             
 
                 </div>

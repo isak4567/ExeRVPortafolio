@@ -12,7 +12,7 @@ function Portafolio({activo}) {
 
     return (
           
-        <div className={`Portafolio ${activo !== 2 && "displayNone"}`}>
+        <div className={`Portafolio ${activo !== 2 && "displayNone"}`} id={"Portafolio"}>
 
             <div className="lista-trabajos">
 
