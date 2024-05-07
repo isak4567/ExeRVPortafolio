@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ExeRVPortafolio/static/css/main.33163375.css",
-    "main.js": "/ExeRVPortafolio/static/js/main.ee9cc568.js",
+    "main.css": "/ExeRVPortafolio/static/css/main.82c841e6.css",
+    "main.js": "/ExeRVPortafolio/static/js/main.af3019ee.js",
     "static/media/backgroundImage.png": "/ExeRVPortafolio/static/media/backgroundImage.d9449eb18aa1247dada0.png",
     "static/media/nube_suave_atras.png": "/ExeRVPortafolio/static/media/nube_suave_atras.02724ee7b5cfa943d43e.png",
     "static/media/nube_izquierda.png": "/ExeRVPortafolio/static/media/nube_izquierda.84467afeab29f9a3c9e5.png",
@@ -38,11 +38,11 @@
     "static/media/mini-yo-3.png": "/ExeRVPortafolio/static/media/mini-yo-3.aca3fc10e0c010287443.png",
     "static/media/Titulo2.png": "/ExeRVPortafolio/static/media/Titulo2.4becfcd9fecb30e29ce9.png",
     "index.html": "/ExeRVPortafolio/index.html",
-    "main.33163375.css.map": "/ExeRVPortafolio/static/css/main.33163375.css.map",
-    "main.ee9cc568.js.map": "/ExeRVPortafolio/static/js/main.ee9cc568.js.map"
+    "main.82c841e6.css.map": "/ExeRVPortafolio/static/css/main.82c841e6.css.map",
+    "main.af3019ee.js.map": "/ExeRVPortafolio/static/js/main.af3019ee.js.map"
   },
   "entrypoints": [
-    "static/css/main.33163375.css",
-    "static/js/main.ee9cc568.js"
+    "static/css/main.82c841e6.css",
+    "static/js/main.af3019ee.js"
   ]
 }
