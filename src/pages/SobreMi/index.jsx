@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { Experiencia, Habilidad, Educacion, Valores } from "../../components";
+import { Experiencia, ExperienciaMovil, Habilidad, Educacion, Valores } from "../../components";
 import { FaChalkboardTeacher, FaStar, FaBook, FaBookmark } from "react-icons/fa";
 
 function SobreMi({activo, setActivo}) {
@@ -50,4 +50,21 @@ function SobreMi({activo, setActivo}) {
     );
 }
 
-export { SobreMi };
+function SobreMiMovil({activo, setActivo, seccionMi}) {
+
+    
+    return (             
+        <div className={`SobreMi ${activo !== 1 && "displayNone"}`}>
+
+            <div className="SobreMi-Seccion">
+                <ExperienciaMovil activo={seccionMi}/>
+                <Habilidad activo={seccionMi} />
+                <Educacion activo={seccionMi} />
+                <Valores activo={seccionMi} setActivo={setActivo} />
+            </div>
+
+        </div>
+    );
+}
+
+export { SobreMi, SobreMiMovil };

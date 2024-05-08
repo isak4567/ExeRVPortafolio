@@ -1588,10 +1588,149 @@ form .formulario-espacios .form-submit:hover {
   .trabajo-detalles .trabajo-detalles-volver:hover svg, .trabajo-detalles .trabajo-detalles-volver:hover p, .trabajo-detalles .trabajo-detalles-volver:active svg, .trabajo-detalles .trabajo-detalles-volver:active p {
     color: #E3DB1D;
   }
+  /* ############# Contenido Principal - SobreMi ############# */
+  .SobreMi-nav {
+    width: 100%;
+    display: flex;
+    padding: 0 12px;
+    gap: 8px;
+  }
+  .SobreMi-nav div {
+    height: 70px;
+  }
+  .SobreMi-nav div p {
+    font-size: 14px;
+  }
+  .SobreMi-nav div svg {
+    font-size: 20px;
+  }
+  .SobreMi-Seccion {
+    width: 100%;
+  }
   /* ============== SobreMi - Experiencia ============== */
+  .Experiencia {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .exp-navCont {
+    width: 100%;
+    margin: 0;
+    justify-content: space-between;
+  }
+  .exp-navCont .exp-nav {
+    margin: 0;
+  }
+  .exp-navCont .movil-border-rigth::before {
+    content: "";
+    width: 5px;
+    height: 10px;
+    background-color: rgb(227, 220, 29);
+    border: none;
+    border-radius: 0;
+    border-left: 2px solid #E3DB1D;
+    margin-left: -96%;
+    margin-bottom: -90px;
+  }
+  .exp-navCont .movil-border-left::after {
+    content: "";
+    width: 5px;
+    height: 10px;
+    background-color: rgb(227, 220, 29);
+    border: none;
+    border-radius: 0;
+    border-right: 2px solid #E3DB1D;
+    margin-left: -66%;
+    margin-bottom: -90px;
+  }
+  .experiencia-info {
+    margin-bottom: 24px;
+  }
+  .experiencia-top {
+    display: flex;
+    align-items: center;
+  }
+  .experiencia-top div {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .experiencia-top .exp-titulo {
+    padding-right: 10px;
+    min-width: 150px;
+    border: none;
+  }
+  .experiencia-top .exp-puesto {
+    border-left: 2px solid #E3DB1D;
+    min-width: 30%;
+    border-right: none;
+    padding: 0;
+    padding-left: 10px;
+  }
+  .exp-fecha {
+    max-width: 150px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #E3DB1D;
+    margin-top: 12px;
+    line-height: 24px;
+  }
+  .experiencia-descr {
+    padding: 20px 0 0 18px;
+  }
+  .expSub-cont {
+    grid-template-columns: 1fr 1fr;
+  }
+  .expSub-cont .expSub-col {
+    border-right: none;
+  }
+  .expSub-cont .expSub-col-2 {
+    width: 100%;
+  }
+  .expSub-cont .expSub-col-2 .expSub-list {
+    width: 100%;
+    padding: 8px 0 0 0;
+  }
   /* ============== SobreMi - Habilidad ============== */
   /* ============== SobreMi - Valóres ============== */
+  .Valores {
+    padding: 24px;
+  }
+  .Valores .valores-list {
+    height: -moz-fit-content;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  .Valores .valores-list .valores-cont {
+    flex-direction: row;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 90%;
+    margin-left: 10%;
+    margin-bottom: 0;
+  }
+  .Valores .valores-list .valores-cont img {
+    margin-left: -58px;
+    margin-bottom: -60px;
+  }
+  .Valores .valores-list .valores-cont .valores-desc p {
+    margin-top: 0;
+    text-align: start;
+    padding: 0 16px;
+  }
+  .Valores .valores-list .valores-cont .valores-desc .v-tittle {
+    margin-bottom: 8px;
+    margin-top: 12px;
+    line-height: 24px;
+  }
+  .Valores .valores-call p {
+    display: none;
+  }
   /* ############# Contenido Principal - Servicios ############# */
+  .displayNone {
+    display: none;
+  }
 }
 @media only screen and (min-width: 467px) and (max-width: 700px) {
   .lista-trabajos {

@@ -12,7 +12,7 @@ function Portafolio({activo}) {
 
     return (
           
-        <div className={`Portafolio ${activo !== 2 && "displayNone"}`} id={"Portafolio"}>
+        <div className={`Portafolio ${activo !== 2 && "displayNone"}`}>
 
             <div className="lista-trabajos">
 
@@ -84,7 +84,7 @@ function PortafolioMovil({activo, actTrabajo}) {
 
     return (
           
-        <div className={`Portafolio ${activo !== 2 && "displayNone"}`}>
+        <div className={`Portafolio ${activo !== 2 && "displayNone"}`} id={"Portafolio"}>
 
             {proyectos.map((el, index) => <TrabajoMovil info={el} active={actTrabajo} number={index}/>)}
 

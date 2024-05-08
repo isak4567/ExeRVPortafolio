@@ -161,4 +161,142 @@ const proyectos = [
     },
 ]
 
-export {proyectos};
+const experiencia = [
+    {
+        eT1: "Hecho x Nosotros",
+        eT2: "UX Researcher",
+        eT3: "Desde: Julio/2023 Hasta: Enero/2024",
+        eDesc: [
+            "Desarrollar el procedimiento de investigación plasmado en trello.",
+            "Crear encuestas y realizar entrevistas a usuarios para obtener información cualitativa y cuantitativa.",
+            "Planificar una nueva arquitectura de información basada en los resultados obtenidos en la Card-Sorting y Treetesting.",
+            "Realicé pruebas A/B para el sitio web de la empresa, aumentando el puntaje de usabilidad de la versión anterior del sitio en un 78%.",
+        ],
+        aprendi: [
+            "Como trabajar con un equipo internacional en inlges.",
+            "A Demostrar la valia de la investigación para cumplir las metas del producto.",
+            "A cambiar de rol por el puesto más indispensable a ocupar."
+        ],
+        programas: [
+            require("../assets/img/programasYEst/figma.png"),
+            require("../assets/img/programasYEst/adobe-photoshop.png"),
+            require("../assets/img/programasYEst/ilustrador-adobe.png"),
+        ],
+        sSkills: [
+            "Trabajo en equipo.",
+            "Capacidad de análisis.",
+            "Resolución de problemas.",
+            "Liderazgo.",
+            "Comunicación efectiva.",
+            "Design Thinking.",
+            "Empatizar con el usuario.",
+            "Google Analitics.",
+            "English.",
+        ],
+    },
+    {
+        eT1: "Coder House",
+        eT2: "Tutor UX/UI",
+        eT3: "Desde: Diciembre/2023 Hasta: *Presente*",
+        eDesc: [
+            "Lidere al equipo de UX/UI para completar con éxito múltiples proyectos, cada uno en el plazo de 1 mes, cada equipo connformado entre 12 a 20 personas.",
+            "Definí las metas en el equipo UX y establecí el MVP para comenzar el proyecto en par al equipo de programación.",
+            "Planifiqué la ruta de investigación UX/UI y definí los trabajos a realizar de acorde a las habilidades del equipo.",
+            "Diseñe wireframes en baja, capaz de poner a prueba para tener obtener resultados.",
+            "Diseñe la presentación del producto para el stakeholder para mostrar los resultados positivos.",
+        ],
+        aprendi: [
+            "A Demostrar la importancia de los estudios UX.",
+            "Mejore mi ojo critico con base a objetivos y diseño.",
+            "A Comunicar ideas y experiencias.",
+        ],
+        programas: [
+            require("../assets/img/programasYEst/figma.png"),
+        ],
+        sSkills: [
+            "Trabajo en equipo.",
+            "Capacidad de análisis.",
+            "Resolución de problemas.",
+            "Comunicación efectiva.",
+            "Aprender nuevas habilidades.",
+            "Capacidad para enseñar.",
+            "Empatizar con el usuario.",
+        ],
+    },
+    {
+        eT1: "No Country",
+        eT2: "Diseñador UX/UI - Team Leader",
+        eT3: "Desde: Oct/2022 Hasta: Abril/2023",
+        eDesc: [
+            "Lidere al equipo de UX/UI para completar con éxito múltiples proyectos, cada uno en el plazo de 1 mes, cada equipo connformado entre 12 a 20 personas.",
+            "Definí las metas en el equipo UX y establecí el MVP para comenzar el proyecto en par al equipo de programación.",
+            "Definí las metas en el equipo UX y establecí el MVP para comenzar el proyecto en par al equipo de programación.",
+            "Diseñe wireframes en baja, capaz de poner a prueba para tener obtener resultados.",
+            "Diseñe la presentación del producto para el stakeholder para mostrar los resultados positivos.",
+        ],
+        aprendi: [
+            "A trabajar con equipos altamente dinamicos y de muchas personas.",
+            "A priorizar un MVP amoldable a las necesidades.",
+            "A Trabajar en mis habilidades creando Story telling."
+        ],
+        programas: [
+            require("../assets/img/programasYEst/figma.png"),
+            require("../assets/img/programasYEst/adobe-photoshop.png"),
+            require("../assets/img/programasYEst/ilustrador-adobe.png"),
+            require("../assets/img/programasYEst/premier-pro.png"),
+        ],
+        sSkills: [
+            "Trabajo en equipo.",
+            "Capacidad de análisis.",
+            "Resolución de problemas.",
+            "Metodologia Scrum.",
+            "Liderazgo.",
+            "Comunicación efectiva.",
+            "Aprender nuevas habilidades.",
+            "Capacidad para enseñar.",
+            "Design Thinking.",
+            "Empatizar con el usuario.",
+        ],
+    },
+    {
+        eT1: "ABOVE (marca freelance)",
+        eT2: "Diseñador UX/UI",
+        eT3: "Desde: Abril/2022 Hasta: *Presente*",
+        eDesc: [
+            "Planear Proceso de UXreserch con el fin de crear hipótesis que lograrán un producto innovador y competente.",
+            "Realización de user testing para recopilar painpoint y evaluar la arquitectura de la información.",
+            "Basándonos en los resultados del estudio, crear hipótesis e implementar cambios en el diseño, considerando las necesidades del stakeholder.",
+            "Diseñar pantallas responsive de alta fidelidad.",
+            "Creación de guías de estilo graficá, para mantener una marca consistente en todos los productos.",
+        ],
+        aprendi: [
+            "A optimizar mis tiempos.",
+            "A Crear equipos de proyecto con habilidades especificas.",
+            "A amoldar el diseño con respecto a las necesidades del Stakeholder."
+        ],
+        programas: [
+            require("../assets/img/programasYEst/figma.png"),
+            require("../assets/img/programasYEst/adobe-photoshop.png"),
+            require("../assets/img/programasYEst/ilustrador-adobe.png"),
+            require("../assets/img/programasYEst/adobe-lightroom.png"),
+            require("../assets/img/programasYEst/premier-pro.png"),
+            require("../assets/img/programasYEst/rhinos.png"),
+            require("../assets/img/programasYEst/scope.png"),
+            require("../assets/img/programasYEst/unreal.png"),
+        ],
+        sSkills: [
+            "Trabajo en equipo.",
+            "Capacidad de análisis.",
+            "Resolución de problemas.",
+            "Metodologia Scrum.",
+            "Liderazgo.",
+            "Comunicación efectiva.",
+            "Aprender nuevas habilidades.",
+            "Pruebas de usabilidad.",
+            "Design Thinking.",
+            "Empatizar con el usuario.",
+        ],
+    },
+]
+
+export {proyectos, experiencia};

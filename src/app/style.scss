@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
 
 * {
     margin: 0;
@@ -1648,17 +1648,147 @@ form {
         }
     }
 }
+/* ############# Contenido Principal - SobreMi ############# */
+.SobreMi-nav {
+    width: 100%;
+    display: flex;
+    padding: 0 12px;
+    gap: 8px;
+    div {
+        height: 70px;
+        p {font-size: 14px;}
+        svg {font-size: 20px;}
+    }
+}
 
+.SobreMi-Seccion {
+    width: 100%;
+}
 /* ============== SobreMi - Experiencia ============== */
+.Experiencia {height: fit-content;}
 
+.exp-navCont {
+    width: 100%;
+    margin: 0;
+    justify-content: space-between;
+    .exp-nav {
+        margin: 0;
+    }
+    .movil-border-rigth::before {
+        content: '';
+        width: 5px;
+        height: 10px;
+        background-color:rgb(227, 220, 29);
+        border: none;
+        border-radius: 0;
+        border-left: 2px solid $Color4;;
+        margin-left: -96%;
+        margin-bottom: -90px;
+    }
+    .movil-border-left::after {
+        content: '';
+        width: 5px;
+        height: 10px;
+        background-color:rgb(227, 220, 29);
+        border: none;
+        border-radius: 0;
+        border-right: 2px solid $Color4;;
+        margin-left: -66%;
+        margin-bottom: -90px;
+    }
+}
 
+.experiencia-info {
+    margin-bottom: 24px;
+}
+
+.experiencia-top {
+    display: flex;
+    align-items: center;
+    div {height: fit-content;}
+    .exp-titulo {
+        padding-right: 10px;
+        min-width: 150px;
+        border: none;
+    }
+    .exp-puesto {
+        border-left: 2px solid $Color4;
+        min-width: 30%;
+        border-right: none;
+        padding: 0;
+        padding-left: 10px;
+    }
+}
+
+.exp-fecha {
+    max-width: 150px;
+    font-size: 20px;
+    font-weight: 300;
+    color: $Color4;
+    margin-top: 12px;
+    line-height: 24px;
+}
+
+.experiencia-descr {
+    padding: 20px 0 0 18px;
+}
+
+.expSub-cont {
+    grid-template-columns: 1fr 1fr;
+    .expSub-col {border-right: none;}
+    .expSub-col-2 {
+        width: 100%;
+        .expSub-list {
+            width: 100%;
+            padding: 8px 0 0 0;
+        }
+    }
+}
 /* ============== SobreMi - Habilidad ============== */
 
 
 /* ============== SobreMi - Valóres ============== */
-
+.Valores {
+    padding: 24px;
+    .valores-list {
+        height: fit-content;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 24px;
+        .valores-cont {
+            flex-direction: row;
+            height: fit-content;
+            width: 90%;
+            margin-left: 10%;
+            margin-bottom: 0;
+            img {
+                margin-left: -58px;
+                margin-bottom: -60px;
+            }
+            .valores-desc {
+                p {
+                    margin-top: 0;
+                    text-align: start;
+                    padding: 0 16px;
+                }
+                .v-tittle {
+                    margin-bottom: 8px;
+                    margin-top: 12px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+    .valores-call {
+        p {display: none;}
+    }
+}
  
 /* ############# Contenido Principal - Servicios ############# */
+.displayNone {
+    display: none;
+}
 
 }
 

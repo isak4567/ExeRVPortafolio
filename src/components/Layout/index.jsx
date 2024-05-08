@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { FaPhoneAlt, FaLinkedinIn, FaBehance, FaEnvelope, FaBars } from "react-icons/fa";
-import { Home, Portafolio, PortafolioMovil, Referencias, Servicios, SobreMi } from '../../pages';
+import { FaPhoneAlt, FaLinkedinIn, FaBehance, FaEnvelope, FaBars, FaChalkboardTeacher, FaStar, FaBook, FaBookmark } from "react-icons/fa";
+import { Home, Portafolio, PortafolioMovil, Referencias, Servicios, SobreMi, SobreMiMovil } from '../../pages';
 
 function LayoutPc() {
   
@@ -89,10 +89,17 @@ function LayoutMovil() {
         setActNavPort(false);
     }; 
 
+    // ###### SobreMi
+    const [botonActivo3, setBotonActivo3] = useState(1);
+
+    const HandlerBoton3 = (seccion) => {
+        setBotonActivo3(seccion);
+    };   
+
     return (
         <div className="App">
 
-            <div className="header-movil" id="gg">
+            <div className="header-movil">
                 <FaBars className={`${nav == true && "activo"}`} onClick={()=>{setNav(!nav)}}/>
             </div>
 
@@ -131,7 +138,7 @@ function LayoutMovil() {
                 <div className="Cont-Principal">
                     <Home activo={botonActivo}/>
                     <PortafolioMovil activo={botonActivo} actTrabajo={actTrabajo}/>
-                    <SobreMi activo={botonActivo} setActivo={setBotonActivo}/>
+                    <SobreMiMovil activo={botonActivo} setActivo={setBotonActivo} seccionMi={botonActivo3}/>
                     <Servicios activo={botonActivo}/>
                     <Referencias activo={botonActivo}/>
                 </div>
@@ -232,6 +239,31 @@ function LayoutMovil() {
                     </div>             
 
                 </div>
+
+                <div className={`SobreMi-nav ${botonActivo !== 1 && "displayNone"}`}>
+
+                    <div className={`${botonActivo3 === 1 && "activo2" }`} 
+                    onClick={() => HandlerBoton3(1)}>
+                        <FaChalkboardTeacher />
+                        <p>Experiencia</p>
+                    </div>
+                    <div className={`${botonActivo3 === 2 && "activo2" }`} 
+                    onClick={() => HandlerBoton3(2)}>
+                        <FaStar />
+                        <p>Habilidades</p>
+                    </div>
+                    <div className={`${botonActivo3 === 3 && "activo2" }`} 
+                    onClick={() => HandlerBoton3(3)}>
+                        <FaBook />
+                        <p>Educación</p>
+                    </div>
+                    <div className={`${botonActivo3 === 4 && "activo2" }`} 
+                    onClick={() => HandlerBoton3(4)}>
+                        <FaBookmark />
+                        <p>Valores</p>
+                    </div>
+
+                </div>                
             </div>
 
         </div>
