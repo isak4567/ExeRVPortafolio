@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ExeRVPortafolio/static/css/main.f6ba88e4.css",
+    "main.css": "/ExeRVPortafolio/static/css/main.f251ae75.css",
     "main.js": "/ExeRVPortafolio/static/js/main.037e87b9.js",
     "static/media/backgroundImage.png": "/ExeRVPortafolio/static/media/backgroundImage.d9449eb18aa1247dada0.png",
     "static/media/nube_suave_atras.png": "/ExeRVPortafolio/static/media/nube_suave_atras.02724ee7b5cfa943d43e.png",
@@ -38,11 +38,11 @@
     "static/media/mini-yo-3.png": "/ExeRVPortafolio/static/media/mini-yo-3.aca3fc10e0c010287443.png",
     "static/media/Titulo2.png": "/ExeRVPortafolio/static/media/Titulo2.4becfcd9fecb30e29ce9.png",
     "index.html": "/ExeRVPortafolio/index.html",
-    "main.f6ba88e4.css.map": "/ExeRVPortafolio/static/css/main.f6ba88e4.css.map",
+    "main.f251ae75.css.map": "/ExeRVPortafolio/static/css/main.f251ae75.css.map",
     "main.037e87b9.js.map": "/ExeRVPortafolio/static/js/main.037e87b9.js.map"
   },
   "entrypoints": [
-    "static/css/main.f6ba88e4.css",
+    "static/css/main.f251ae75.css",
     "static/js/main.037e87b9.js"
   ]
 }
