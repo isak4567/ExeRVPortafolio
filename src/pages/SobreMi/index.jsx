@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { Experiencia, ExperienciaMovil, Habilidad, Educacion, Valores } from "../../components";
+import { Experiencia, ExperienciaMovil, Habilidad, HabilidadMovil, Educacion, EducacionMovil, Valores } from "../../components";
 import { FaChalkboardTeacher, FaStar, FaBook, FaBookmark } from "react-icons/fa";
 
 function SobreMi({activo, setActivo}) {
@@ -58,8 +58,8 @@ function SobreMiMovil({activo, setActivo, seccionMi}) {
 
             <div className="SobreMi-Seccion">
                 <ExperienciaMovil activo={seccionMi}/>
-                <Habilidad activo={seccionMi} />
-                <Educacion activo={seccionMi} />
+                <HabilidadMovil activo={seccionMi} />
+                <EducacionMovil activo={seccionMi} />
                 <Valores activo={seccionMi} setActivo={setActivo} />
             </div>
 

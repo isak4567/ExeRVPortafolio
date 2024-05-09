@@ -36,43 +36,52 @@ function Servicios({activo}) {
                 <div className="servicio-cont">
                     <img src={require("../../assets/img/mini-yo-3.png")} alt="" />
 
-                    <p>UX Research</p>
+                    <div className="servicio-cont-desc">
+                        <p>UX Research</p>
 
-                    <ul>
-                        {inf2[0].map((el) => <li>{el}.</li>)}
-                    </ul>
+                        <ul>
+                            {inf2[0].map((el) => <li>{el}.</li>)}
+                        </ul>
+                    </div>
+
                 </div>
 
                 <div className="servicio-cont">
                     <img src={require("../../assets/img/mini-yo-4.png")} alt="" />
 
-                    <p>Diseñar Interfaz (UI)</p>
+                    <div className="servicio-cont-desc">
+                        <p>Diseñar Interfaz (UI)</p>
 
-                    <ul>
-                        {inf2[1].map((el) => <li>{el}.</li>)}
-                    </ul>
+                        <ul>
+                            {inf2[1].map((el) => <li>{el}.</li>)}
+                        </ul>
+                    </div>
                 </div>
 
                 <div className="servicio-cont">
                     <img src={require("../../assets/img/mini-yo-2.png")} alt="" />
 
-                    <p>Liderar un proyecto</p>
+                    <div className="servicio-cont-desc">
+                        <p>Liderar un proyecto</p>
 
-                    <ul>
-                        {inf2[2].map((el) => <li>{el}.</li>)}
-                    </ul>
+                        <ul>
+                            {inf2[2].map((el) => <li>{el}.</li>)}
+                        </ul>
+                    </div>
                 </div>
 
                 <div className="servicio-cont">
                     <img src={require("../../assets/img/mini-yo-1.png")} alt="" />
 
-                    <p>Mentorear Personal UX</p>
+                    <div className="servicio-cont-desc">
+                        <p>Mentorear Personal UX</p>
 
-                    <ul>
-                        {inf2[3].map((el) => <li>{el}.</li>)}
-                    </ul>
+                        <ul>
+                            {inf2[3].map((el) => <li>{el}.</li>)}
+                        </ul>
 
-                    <p className="s-m"><span>Servicio no renumerado</span> me apasiona el UX y la gente que comparte dicha pasión.</p>
+                        <p className="s-m"><span>Servicio no renumerado</span> me apasiona el UX y la gente que comparte dicha pasión.</p>
+                    </div>
                 </div>
             </div>
 

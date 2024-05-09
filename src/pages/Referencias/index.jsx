@@ -62,7 +62,7 @@ function Referencias({activo}) {
                 <div className="formulario-espacios">
                     <input className="form-linkend" type="text" name="Linkedin"/>
                     <textarea name="ExperienciaConmpartida"
-                    placeholder="deja un comentario de como fue tu experiencia"></textarea>
+                    placeholder="Deja un comentario de como fue tu experiencia."></textarea>
                     <input className="form-submit" type="submit" />
                 </div>
             </form>
