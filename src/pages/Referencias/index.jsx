@@ -51,7 +51,7 @@ function Referencias({activo}) {
                     {info4.map((el, index) => 
                     (<div className={`${botonActivo === index && "activo" }`} 
                     onClick={() => HandlerBoton3(index, el.comentario)} >
-                        <img src={require(`../../assets/img/${el.foto}.png`)} />
+                        <img src={require(`../../assets/img/${el.foto}.webp`)} />
                     </div>))}
                 </div>
             </div>

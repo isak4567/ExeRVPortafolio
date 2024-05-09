@@ -6,7 +6,7 @@ function Home({activo}) {
     return (
         <div className={`home ${activo !== 0 && "displayNone"}`}>            
             
-            <img className="img-sujeto" src={require("../../assets/img/perfil.png")} alt="" />
+            <img className="img-sujeto" src={require("../../assets/img/perfil.webp")} alt="" />
 
             <div className="sujeto">
                 <h1>Exequiel Robles Vega Diseñador UX/UI</h1>

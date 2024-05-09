@@ -13,7 +13,7 @@ const proyectos = [
             require("../assets/img/programasYEst/ilustrador-adobe.png"),
             require("../assets/img/programasYEst/premier-pro.png"),
         ],
-        portada: require("../assets/img/portafolio/HxN-B.png"),
+        portada: require("../assets/img/portafolio/HxN-B.webp"),
         presentacion: "",
     },
     {
@@ -27,7 +27,7 @@ const proyectos = [
             require("../assets/img/programasYEst/adobe-photoshop.png"),
             require("../assets/img/programasYEst/ilustrador-adobe.png"),
         ],
-        portada: require("../assets/img/portafolio/YGG-B.png"),
+        portada: require("../assets/img/portafolio/YGG-B.webp"),
         presentacion: "https://www.behance.net/gallery/157749319/Social-Media-for-the-metaverse",
     },
     {
@@ -42,7 +42,7 @@ const proyectos = [
             require("../assets/img/programasYEst/adobe-lightroom.png"),
             require("../assets/img/programasYEst/premier-pro.png"),
         ],
-        portada: require("../assets/img/portafolio/PRO-B.png"),
+        portada: require("../assets/img/portafolio/PRO-B.webp"),
         presentacion: "https://www.behance.net/gallery/179332465/PROgrama",
     },
     {
@@ -59,7 +59,7 @@ const proyectos = [
             require("../assets/img/programasYEst/premier-pro.png"),
         ],
         presentacion: "",
-        portada: require("../assets/img/portafolio/INDEMNIZAR-B.png"),
+        portada: require("../assets/img/portafolio/INDEMNIZAR-B.webp"),
     },
     {
         titulo: "EMD",
@@ -74,7 +74,7 @@ const proyectos = [
             require("../assets/img/programasYEst/premier-pro.png"),
         ],
         presentacion: "",
-        portada: require("../assets/img/portafolio/EMD-B.png"),
+        portada: require("../assets/img/portafolio/EMD-B.webp"),
     },
     {
         titulo: "A la orden",
@@ -89,7 +89,7 @@ const proyectos = [
             require("../assets/img/programasYEst/premier-pro.png"),
         ],
         presentacion: "",
-        portada: require("../assets/img/portafolio/ALA-B.png"),
+        portada: require("../assets/img/portafolio/ALA-B.webp"),
     },
     {
         titulo: "Smarth Money School",
@@ -101,7 +101,7 @@ const proyectos = [
             require("../assets/img/programasYEst/figma.png"),
         ],
         presentacion: "",
-        portada: require("../assets/img/portafolio/SMS-B.png"),
+        portada: require("../assets/img/portafolio/SMS-B.webp"),
     },
     {
         titulo: "VALEN - A place for fashion",
@@ -114,7 +114,7 @@ const proyectos = [
             require("../assets/img/programasYEst/premier-pro.png"),
         ],
         presentacion: "",
-        portada: require("../assets/img/portafolio/VALEN-B.png"),
+        portada: require("../assets/img/portafolio/VALEN-B.webp"),
     },
     {
         titulo: "Hecho para 2",
@@ -127,7 +127,7 @@ const proyectos = [
             require("../assets/img/programasYEst/adobe-photoshop.png"),
         ],
         presentacion: "https://www.behance.net/gallery/163154879/Hecho-para-2-(-APP-web)",
-        portada: require("../assets/img/portafolio/HP2-B.png"),
+        portada: require("../assets/img/portafolio/HP2-B.webp"),
     },
     {
         titulo: "Crossfy",
@@ -143,7 +143,7 @@ const proyectos = [
 
         ],
         presentacion: "https://www.behance.net/gallery/148706463/rediseno-UXUI",
-        portada: require("../assets/img/portafolio/Crossfy-B.png"),
+        portada: require("../assets/img/portafolio/Crossfy-B.webp"),
     },
     {
         titulo: "Apoyo",
@@ -157,7 +157,7 @@ const proyectos = [
             require("../assets/img/programasYEst//ilustrador-adobe.png"),
         ],
         presentacion: "https://www.behance.net/gallery/135660083/Proyecto-final-Robles-Vega-Coder-house-2022",
-        portada: require("../assets/img/portafolio/APOYO-B.png"),
+        portada: require("../assets/img/portafolio/APOYO-B.webp"),
     },
 ]
 
