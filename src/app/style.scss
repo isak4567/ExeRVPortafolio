@@ -1000,7 +1000,7 @@ body {
         height: 100%;
         display: flex;
         justify-content: space-evenly;
-        align-items: end;
+        align-items: flex-end;
         gap: 24px;
         .valores-cont {
             display: flex;
@@ -1449,10 +1449,22 @@ form {
     
     svg {
         font-size: 28px;
+        padding: 4px 8px;
+        border-radius: 8px;
         transition: 0.3s all;
+        animation: showButton 0.8s 2s 10;
     }
 
     .activo { color: $Color3;}
+}
+
+@keyframes showButton {
+    0% {
+        box-shadow: inset 0px 0px 0px 0px #fa2f4d85, 0px 4px 15px 0px rgba(252, 97, 94, 0.35);
+        }
+    100% {
+        box-shadow: inset 0px 0px 0px 2px #fa2f4d85, 0px 4px 30px 1px rgba(252, 97, 94, 0.35);
+    }
 }
 
 .main-movil {
@@ -1474,6 +1486,7 @@ form {
 .Navegador {
     width: 306px;
     transition: 0.3s all;
+    position: absolute;
     margin-left: 0;
     z-index: 99;
 }
